@@ -85,7 +85,7 @@
 
         <div class="content">
             <div class="title m-b-md">
-                カクテル2
+                カクテル10000
             </div>
 
             <div class="links">
