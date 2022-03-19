@@ -1,6 +1,5 @@
 //SVGアニメーションの描画
-var stroke;
-stroke = new Vivus('mask', {
+const stroke = new Vivus('mask', {
     start:'manual',
     type: 'scenario-sync',
     duration: 80,
