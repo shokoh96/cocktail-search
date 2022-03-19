@@ -31,7 +31,7 @@
                 </div>
             </div>
 
-             <img class="picture" src="/Applications/XAMPP/xamppfiles/htdocs/cocktail-search/public/img/sample_zin_KH.jpeg" alt=""> 
+             <img class="picture" src="img/sample_zin_KH.jpeg" alt=""> 
 
              <div class="container3">
                  <div class="box5">Base</div>
