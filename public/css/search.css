@@ -1,0 +1,268 @@
+  header {
+    height: 129px;
+  }
+  
+  body {
+    width: 1920px;
+    height: auto;
+    color:#fff;
+    font-size: 30px;
+    font-family: 'せのびゴシック';
+    background: -moz-linear-gradient(top, #355469,#1B2A35);
+    background: -webkit-linear-gradient(top, #355469,#1B2A35);
+    background: linear-gradient(to bottom, #355469, #1B2A35);
+    position: relative;
+  }
+  
+  
+  img.pic1 {
+    position: absolute;
+    width: 375px;
+    height: 325px;
+    top: -64px;
+    left: 150px;
+  }
+  
+  img.pic2 {
+    position: absolute;
+    bottom: -83px;
+    right: 158px;
+  }
+  
+  .body {
+    top: 142px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    position: relative;
+  }
+  
+  .search {
+    width: 1448px;
+    height: 539px;
+    background-image: url("./img/search-back.png");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+  }
+  
+  .serchin {
+    height: 383px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: -8px;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  
+  .one {
+    display: flex;
+    flex-direction: column;
+    width: 385px;
+    text-align: center;  
+    /* margin-top: -9px; */
+  }
+  
+  
+  
+  label {
+    padding-bottom: 23px;
+    font-family: 'せのびゴシック';
+  }
+  
+  input.free {
+    font-size: 18px;
+    padding-left:10px;
+  }
+  
+  input.base {
+    font-size: 18px;
+    padding-left:4px;
+    text-align: left;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+  }
+  
+  input.base option {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .free > input::-webkit-input-placeholder { 
+    color: #355469;
+    opacity: 0.5;
+    font-size: 18px;
+    vertical-align: middle;
+  }
+  
+  .two {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 960px;
+    margin-bottom: 36px;
+  }
+  
+  .free {
+    line-height: 2;
+  }
+  
+  
+  .base {
+    width: 230px;
+    text-align: center;
+    margin-bottom: 19px;
+    line-height: 2.2;
+  }
+  
+  @font-face{font-family:"IonIcons";src:url("//code.ionicframework.com/ionicons/2.0.1/fonts/ionicons.eot?v=2.0.1");src:url("//code.ionicframework.com/ionicons/2.0.1/fonts/ionicons.eot?v=2.0.1#iefix") format("embedded-opentype"),url("//code.ionicframework.com/ionicons/2.0.1/fonts/ionicons.ttf?v=2.0.1") format("truetype"),url("//code.ionicframework.com/ionicons/2.0.1/fonts/ionicons.woff?v=2.0.1") format("woff"),url("//code.ionicframework.com/ionicons/2.0.1/fonts/ionicons.svg?v=2.0.1#Ionicons") format("svg");font-weight:normal;font-style:normal}
+  
+  
+  .select-wrap {
+      position: relative;
+  }
+  .select-wrap:before {
+      z-index: 1;
+      position: absolute;
+      right: 15px;
+      top: 0;
+      content: "\f123";
+      font-family: "IonIcons";
+      line-height: 50px;
+      color: #7F878C;
+      pointer-events: none;
+      font-size: 18px;
+  }
+  select{
+      outline:none;
+      -moz-appearance: none;
+      text-indent: 0.01px;
+      text-overflow: '';
+      background: #fff;
+      vertical-align: middle;
+      font-size: 18px;
+      -webkit-appearance: button;
+      -moz-appearance: button;
+      appearance: button;
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      height: 42px;
+      padding: 8px 12px;
+      border:none;
+      color:#828c9a;
+      width:236px;    
+      margin-top: -1px;
+  }
+  
+  .button:hover {
+    opacity:0.8;
+    cursor: pointer;
+  }
+  
+  .button:active {
+    position: relative;
+    top: 2px;
+  }
+  
+  footer {
+    width: 100%;
+    height: 135.66px;
+    background-color: #333;
+    position: absolute;
+    bottom: 0;
+  }
+  
+  
+  /* --------------------------------
+            main-top
+  -------------------------------- */
+  .main-top {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 127px;
+    margin-right: 58px;
+    color: #fff;
+  }
+  .main-top::after {
+    content: url(img/record-list_cocktail.png);
+    position: absolute;
+    top: 97px;
+    right: 55px;
+  }
+  
+  .main-top h1 {
+    width: 430px;
+    border-bottom: solid 1px #FCE4E7;
+    text-align: right;
+    font-size: 40px;
+    font-family: 'はれのそら明朝';
+    padding-bottom: 23px;
+  }
+  .main-top-right {
+    margin-top: -22px;
+  }
+  
+  .main-top-right .navbar {
+    background-color: transparent !important;
+  }
+  .main-top-right .navbar .container-fluid {
+    padding-right: var(--bs-gutter-x, 1rem);
+  }
+  .navbar .navbar-nav .nav-item:nth-child(2) {
+    margin-left: 18px;
+  }
+  .navbar .navbar-nav .nav-link {
+    padding: 0;
+    transition: all 0.9s;
+  }
+  .navbar .navbar-nav .nav-link:hover {
+    opacity: 0.5;
+  }
+  .navbar .navbar-nav .nav-link img {
+    border-radius: 11px;
+  }
+  .nav-link {
+    margin-top: 5px;
+    margin-right: 5px;
+  }
+  .memory-count {
+    position: absolute;
+    top: -24px;
+    right: 17px;
+    font-family: "ヒラギノ丸ゴ ProN";
+    font-size: 20px;
+    color: #fff;
+  }
+  .memory-count p {
+    margin: 0;
+  }
+  
+  .search-box .form-control {
+    width: 356px;
+    height: 52px;
+    border: 0;
+    border-radius: 10px;
+    font-family: "ヒラギノ丸ゴ ProN", "FontAwesome";
+    font-size: 23px;
+    background: rgba(255, 255, 255, 0.68);
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4) inset;
+  }
+  .search-box .form-control::placeholder {
+    color: #7e6f5a;
+  }
+  .push {
+    height: 412px;
+    
+  }
