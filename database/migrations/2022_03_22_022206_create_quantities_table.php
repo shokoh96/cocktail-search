@@ -16,8 +16,12 @@ class CreateQuantitiesTable extends Migration
         Schema::create('quantities', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->unsignedBigInteger('memo_id');
-            $table->foreign('memo_id')->references('id')->on('memos')->onDelete('cascade');
+            $table->foreignId('memo_id')
+                ->constrained()
+                ->onDelete('cascade');
+            $table->foreignId('ingredient_id')
+                ->constrained()
+                ->onDelete('cascade');
         });
     }
 

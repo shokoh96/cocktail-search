@@ -16,10 +16,9 @@ class CreateIngredientsTable extends Migration
         Schema::create('ingredients', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->unsignedBigInteger('quantity_id');
-            $table->unsignedBigInteger('memo_id');
-            $table->foreign('quantity_id')->references('id')->on('quantities');
-            $table->foreign('memo_id')->references('id')->on('memos')->onDelete('cascade');
+            $table->foreignId('memo_id')
+                ->constrained()
+                ->onDelete('cascade');
         });
     }
 
