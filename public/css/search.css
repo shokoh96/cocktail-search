@@ -3,13 +3,13 @@ header {
 }
 
 body {
-  width: 1920px;
+  width: 100%;
   height: auto;
-  color:#fff;
+  color: #fff;
   font-size: 30px;
   font-family: 'せのびゴシック';
-  background: -moz-linear-gradient(top, #355469,#1B2A35);
-  background: -webkit-linear-gradient(top, #355469,#1B2A35);
+  background: -moz-linear-gradient(top, #355469, #1B2A35);
+  background: -webkit-linear-gradient(top, #355469, #1B2A35);
   background: linear-gradient(to bottom, #355469, #1B2A35);
   position: relative;
 }
@@ -19,14 +19,14 @@ img.pic1 {
   position: absolute;
   width: 375px;
   height: 325px;
-  top: -64px;
-  left: 150px;
+  top: -137px;
+  left: -330px;
 }
 
 img.pic2 {
   position: absolute;
-  bottom: -83px;
-  right: 158px;
+  bottom: -163px;
+  right: -320px;
 }
 
 .body {
@@ -40,7 +40,7 @@ img.pic2 {
 .search {
   width: 1448px;
   height: 539px;
-  background-image: url("./img/search-back.png");
+  background-image: url("/img/search-back.png");
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -55,6 +55,7 @@ img.pic2 {
   flex-direction: column;
   justify-content: space-between;
   margin-top: -8px;
+  position: relative;
 }
 
 .content {
@@ -63,15 +64,13 @@ img.pic2 {
   align-items: center;
 }
 
-
 .one {
   display: flex;
   flex-direction: column;
   width: 385px;
-  text-align: center;  
+  text-align: center;
   /* margin-top: -9px; */
 }
-
 
 
 label {
@@ -81,12 +80,12 @@ label {
 
 input.free {
   font-size: 18px;
-  padding-left:10px;
+  padding-left: 10px;
 }
 
 input.base {
   font-size: 18px;
-  padding-left:4px;
+  padding-left: 4px;
   text-align: left;
   -webkit-appearance: button;
   -moz-appearance: button;
@@ -98,7 +97,7 @@ input.base option {
   color: #333;
 }
 
-.free > input::-webkit-input-placeholder { 
+.free>input::-webkit-input-placeholder {
   color: #355469;
   opacity: 0.5;
   font-size: 18px;
@@ -125,54 +124,62 @@ input.base option {
   line-height: 2.2;
 }
 
-@font-face{font-family:"IonIcons";src:url("//code.ionicframework.com/ionicons/2.0.1/fonts/ionicons.eot?v=2.0.1");src:url("//code.ionicframework.com/ionicons/2.0.1/fonts/ionicons.eot?v=2.0.1#iefix") format("embedded-opentype"),url("//code.ionicframework.com/ionicons/2.0.1/fonts/ionicons.ttf?v=2.0.1") format("truetype"),url("//code.ionicframework.com/ionicons/2.0.1/fonts/ionicons.woff?v=2.0.1") format("woff"),url("//code.ionicframework.com/ionicons/2.0.1/fonts/ionicons.svg?v=2.0.1#Ionicons") format("svg");font-weight:normal;font-style:normal}
+@font-face {
+  font-family: "IonIcons";
+  src: url("//code.ionicframework.com/ionicons/2.0.1/fonts/ionicons.eot?v=2.0.1");
+  src: url("//code.ionicframework.com/ionicons/2.0.1/fonts/ionicons.eot?v=2.0.1#iefix") format("embedded-opentype"), url("//code.ionicframework.com/ionicons/2.0.1/fonts/ionicons.ttf?v=2.0.1") format("truetype"), url("//code.ionicframework.com/ionicons/2.0.1/fonts/ionicons.woff?v=2.0.1") format("woff"), url("//code.ionicframework.com/ionicons/2.0.1/fonts/ionicons.svg?v=2.0.1#Ionicons") format("svg");
+  font-weight: normal;
+  font-style: normal
+}
 
 
 .select-wrap {
-    position: relative;
+  position: relative;
 }
+
 .select-wrap:before {
-    z-index: 1;
-    position: absolute;
-    right: 15px;
-    top: 0;
-    content: "\f123";
-    font-family: "IonIcons";
-    line-height: 50px;
-    color: #7F878C;
-    pointer-events: none;
-    font-size: 18px;
+  z-index: 1;
+  position: absolute;
+  right: 15px;
+  top: 0;
+  content: "\f123";
+  font-family: "IonIcons";
+  line-height: 50px;
+  color: #7F878C;
+  pointer-events: none;
+  font-size: 18px;
 }
-select{
-    outline:none;
-    -moz-appearance: none;
-    text-indent: 0.01px;
-    text-overflow: '';
-    background: #fff;
-    vertical-align: middle;
-    font-size: 18px;
-    -webkit-appearance: button;
-    -moz-appearance: button;
-    appearance: button;
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    height: 42px;
-    padding: 8px 12px;
-    border:none;
-    color:#828c9a;
-    width:236px;    
-    margin-top: -1px;
+
+select {
+  outline: none;
+  -moz-appearance: none;
+  text-indent: 0.01px;
+  text-overflow: '';
+  background: #fff;
+  vertical-align: middle;
+  font-size: 18px;
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  height: 42px;
+  padding: 8px 12px;
+  border: none;
+  color: #828c9a;
+  width: 236px;
+  margin-top: -1px;
 }
 
 .button:hover {
-  opacity:0.8;
+  opacity: 0.8;
   cursor: pointer;
 }
 
 .button:active {
   position: relative;
-	top: 2px;
+  top: 2px;
 }
 
 footer {
@@ -185,5 +192,5 @@ footer {
 
 .push {
   height: 412px;
-  
+
 }
