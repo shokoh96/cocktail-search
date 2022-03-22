@@ -17,7 +17,7 @@ class CreateQuantitiesTable extends Migration
             $table->id();
             $table->string('name');
             $table->unsignedBigInteger('memo_id');
-            $table->foreign('memo_id')->references('id')->on('memos');
+            $table->foreign('memo_id')->references('id')->on('memos')->onDelete('cascade');
         });
     }
 

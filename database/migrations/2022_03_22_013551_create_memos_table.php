@@ -19,7 +19,7 @@ class CreateMemosTable extends Migration
             $table->string('base')->nullable();
             $table->string('taste')->nullable();
             $table->string('feature')->nullable();
-            $table->text('comment')->nullable();
+            $table->string('comment', 500)->nullable();
             $table->string('image')->default('no-image');
             $table->unsignedBigInteger('user_id');
             $table->foreign('user_id')->references('id')->on('users');

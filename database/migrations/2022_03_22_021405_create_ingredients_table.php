@@ -19,7 +19,7 @@ class CreateIngredientsTable extends Migration
             $table->unsignedBigInteger('quantity_id');
             $table->unsignedBigInteger('memo_id');
             $table->foreign('quantity_id')->references('id')->on('quantities');
-            $table->foreign('memo_id')->references('id')->on('memos');
+            $table->foreign('memo_id')->references('id')->on('memos')->onDelete('cascade');
         });
     }
 
