@@ -20,7 +20,10 @@ class CreateMemosTable extends Migration
             $table->string('taste')->nullable();
             $table->string('feature')->nullable();
             $table->string('comment', 500)->nullable();
-            $table->string('image')->default('no-image');
+            $table->string('image')->nullable();
+            $table->string('image2')->nullable();
+            $table->string('image3')->nullable();
+            $table->string('image4')->nullable();
             $table->unsignedBigInteger('user_id');
             $table->foreign('user_id')->references('id')->on('users');
             $table->timestamps();
