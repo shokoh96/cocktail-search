@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -49,3 +50,7 @@ Route::get('/records_edit', function () {
 Route::get('/records_create', function () {
     return view('records.create');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
