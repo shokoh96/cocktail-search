@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="create.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/create.css">
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/7d803bff65.js" crossorigin="anonymous"></script>
     
@@ -116,7 +116,7 @@
             <p>copyright &copy; 2022 the 5th class All Rights Reserved</p>
         </footer>
     </div>
-    <script src="script.js"></script>
+    <script src="public/js/create.js"></script>
 </body>
 
 </html>
