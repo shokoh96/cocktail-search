@@ -17,7 +17,7 @@
 
 </head>
 <body>
-    <header class="header"  id="page-top">
+    <header class="header" id="page-top">
         <ul class="item">
             <li><a class="menu" href="">新規登録</a></li>
             <li><a class="menu2" href="">ログイン</a></li>
@@ -155,7 +155,7 @@
           </div><!-- /.pagination-bottom -->
         <!-- ページトップボタン -->
         <div class="main-bottom">
-            <a href="#page-top"><img class="top-btn-img" src="top.png" alt=""></a>
+            <a href="#page-top"><img class="top-btn-img" src="page_top.png" alt=""></a>
         </div>
     </main>
     <footer class="footer">
