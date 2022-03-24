@@ -2,6 +2,13 @@
 
 html { scroll-behavior: smooth;}
 
+/* フォント */
+
+@font-face {
+    font-family: "せのびレギュラー";
+    src: url("fonts/Senobi-Gothic-Regular\ 20.58.13.ttf");
+  }
+
 /* header */
 
 .header {
