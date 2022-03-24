@@ -12,7 +12,6 @@
     <title>新規登録</title>
 </head>
 <body>
-    <div class="container">
         <header class="header"  id="page-top">
             <ul class="item">
                 <li><a class="menu" href="">新規登録</a></li>
@@ -24,7 +23,7 @@
         <main class="main">
             <div class="main-top">
                 <h2>新規登録</h2>
-                <img class="glass" src="グラス.png" alt="グラス">
+                <img class="glass" src="img/create_top.png" alt="グラス">
             </div>
             <div class="input-form-outside">
                 <div class="input-form">
@@ -115,8 +114,7 @@
             <h3>ここ酒</h3>
             <p>copyright &copy; 2022 the 5th class All Rights Reserved</p>
         </footer>
-    </div>
-    <script src="public/js/create.js"></script>
+    <script src="js/create.js"></script>
 </body>
 
 </html>
