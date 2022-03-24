@@ -5,19 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>検索結果</title>
+    <!-- リセットcss -->
     <link rel="stylesheet" href="css/reset.css">
+    <!-- 自作css -->
     <link rel="stylesheet" href="css/search_result.css">
+    <!-- webフォント -->
     <link rel="stylesheet" href="fonts/Senobi-Gothic-Medium.ttf">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/7d803bff65.js" crossorigin="anonymous"></script>
-    
-
-
 </head>
 <body>
-    <header class="header" id="page-top">
+    <header class="header"  id="page-top">
         <ul class="item">
             <li><a class="menu" href="">新規登録</a></li>
             <li><a class="menu2" href="">ログイン</a></li>
@@ -64,60 +62,60 @@
             </div><!-- /.pagination-inner -->
           </div><!-- /.pagination-top -->
         <div class="main-middle">
-          <a href="#">
-            <div class="card">
-                <img src="ジントニック.jpeg" class="card-img-top" alt="">
-                <div class="card-body">
-                    <h2 class="japanese">ジントニック</h2>
-                    <h4 class="english">Gin Tonik</h4>
+                <div class="card">
+                    <a href="">
+                        <img src="img/ジントニック.jpeg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h2 class="japanese">ジントニック</h2>
+                            <h4 class="english">Gin Tonik</h4>
+                        </div>
+                    </a>
                 </div>
-            </div>
-          </a>
-          <a href="#">
-            <div class="card">
-                  <img src="ジントニック.jpeg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                      <h2 class="japanese">ジントニック</h2>
-                      <h4 class="english">Gin Tonik</h4>
-                  </div>
-            </div>
-          </a>
-          <a href="#">
-            <div class="card">
-                <img src="ジントニック.jpeg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h2 class="japanese">ジントニック</h2>
-                    <h4 class="english">Gin Tonik</h4>
+                <div class="card">
+                    <a href="">
+                        <img src="img/ジントニック.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h2 class="japanese">ジントニック</h2>
+                            <h4 class="english">Gin Tonik</h4>
+                        </div>
+                    </a>
                 </div>
-            </div>
-          </a>
-          <a href="#">
-            <div class="card">
-                <img src="ジントニック.jpeg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h2 class="japanese">ジントニック</h2>
-                  <h4 class="english">Gin Tonik</h4>
+                <div class="card">
+                    <a href="">
+                        <img src="img/ジントニック.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h2 class="japanese">ジントニック</h2>
+                            <h4 class="english">Gin Tonik</h4>
+                        </div>
+                    </a>
                 </div>
-            </div>
-          </a>
-          <a href="#">
-            <div class="card">
-                <img src="ジントニック.jpeg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h2 class="japanese">ジントニック</h2>
-                    <h4 class="english">Gin Tonik</h4>
+                <div class="card">
+                    <a href="">
+                        <img src="img/ジントニック.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <h2 class="japanese">ジントニック</h2>
+                        <h4 class="english">Gin Tonik</h4>
+                        </div>
+                    </a>
                 </div>
-            </div>
-          </a>
-          <a href="#">
-            <div class="card">
-                <img src="ジントニック.jpeg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h2 class="japanese">ジントニック</h2>
-                    <h4 class="english">Gin Tonik</h4>
+                <div class="card">
+                    <a href="">
+                        <img src="img/ジントニック.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h2 class="japanese">ジントニック</h2>
+                            <h4 class="english">Gin Tonik</h4>
+                        </div>
+                    </a>
                 </div>
-            </div>
-          </a>
+                <div class="card">
+                    <a href="">
+                        <img src="img/ジントニック.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h2 class="japanese">ジントニック</h2>
+                            <h4 class="english">Gin Tonik</h4>
+                        </div>
+                    </a>
+                </div>
         </div>
         <div class="pagination pagination-bottom">
             <div class="pagination-inner">
@@ -155,7 +153,7 @@
           </div><!-- /.pagination-bottom -->
         <!-- ページトップボタン -->
         <div class="main-bottom">
-            <a href="#page-top"><img class="top-btn-img" src="page_top.png" alt=""></a>
+            <a href="#page-top"><img class="top-btn-img" src="img/top.png" alt=""></a>
         </div>
     </main>
     <footer class="footer">
