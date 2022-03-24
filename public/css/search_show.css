@@ -24,14 +24,14 @@ body{
     text-align: center;
     padding: 60px;
     background-color: #D3D8DB;
-    height: 1450px;
+    height: 1430px;
     border-radius:40px;
 }
 
 .box2{
     flex-direction: column;
     background-color: #D3D7DA;
-    height: 1450px;
+    height: 1430px;
     border-radius: 40px;
     border:1px solid #9e8b73;
 }
@@ -44,7 +44,6 @@ body{
 .container2{
     display: flex;
     justify-content: space-around;
-    margin-top: -15px;
     text-shadow: 1px 2px 3px rgb(141, 139, 139);
 }
 
@@ -54,7 +53,7 @@ body{
     width:200px;
     height: 180px;
     position: absolute;
-    top:1130px ;
+    top:1080px ;
     left: 850px;
     font-size:20px;
     color: #355469;
@@ -155,11 +154,10 @@ body{
 
 .zin{
     font-size: 43px;
-    margin-top: -10px;
-    margin-bottom: -8px;
     color: black;
     font-family: "Noto Serif Myanmar";
     text-shadow: 1px 2px 3px rgb(155, 152, 152);
+    margin-top: 40px;
 }
 
 .box3{
@@ -171,7 +169,7 @@ body{
     font-size: 15px;
     color: rgb(216, 214, 214);
     text-shadow: 1px 2px 3px #213441;
-    padding-top: 2px;
+    padding-top: 8px;
     box-shadow: 2px 2px 4px inset #243a49;
 }
 
@@ -184,7 +182,7 @@ body{
     font-size: 15px;
     color: rgb(216, 214, 214);
     text-shadow: 1px 2px 3px #213441;
-    padding-top: 2px;
+    padding-top: 8px;
     box-shadow: 2px 2px 4px inset #243a49;
 }
 
@@ -225,17 +223,20 @@ body{
 .hr1{
     border-top: 1px solid #BAA68B;
     width: 350px;
+    margin: 0 auto;
 }
 
 .hr2{
     width: 350px;
     border-top: 1px solid #BAA68B;
+    margin: 0 auto;
 }
 
 .hr3{
-    margin-top: 50px;
     width: 550px;
-    border-top: 1px dashed #BAA68B; ;
+    border-top: 1px dashed #BAA68B; 
+    margin: 0 auto;
+    margin-top: 80px;
 }
 
 .guid2{
