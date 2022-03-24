@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "せのびゴシック";
+  src: url("../fonts/Senobi-Gothic.ttf");
+}
+
 header {
   height: 129px;
 }
