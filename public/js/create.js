@@ -62,12 +62,30 @@ function previewFile(file) {
 
 // フォームのinputを増やすボタン
 
-      $(document).on("click", ".add", function() {
-          $(this).parent().clone(true).insertAfter($(this).parent());
+      // $(document).on("click", ".add", function() {
+      //     $(this).parent().clone(true).insertAfter($(this).parent());
+      // });
+      // $(document).on("click", ".del", function() {
+      //     var target = $(this).parent();
+      //     if (target.parent().children().length > 1) {
+      //         target.remove();
+      //     }
+      // });
+
+
+      $(function() {
+
+        $('button#add').click(function(){
+      
+        var tr_form = '' +
+        '<tr>' +
+          '<td><input type="text" name="text_1[]"></td>' +
+          '<td><input type="text" name="text_2[]"></td>' +
+        '</tr>';
+      
+        $(tr_form).appendTo($('table > tbody'));
+      
       });
-      $(document).on("click", ".del", function() {
-          var target = $(this).parent();
-          if (target.parent().children().length > 1) {
-              target.remove();
-          }
+      
+      
       });
