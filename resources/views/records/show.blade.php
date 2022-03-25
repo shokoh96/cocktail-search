@@ -59,7 +59,7 @@
             <div class="detail">
                 <div class="head">
                     <a href="#">>> 思い出一覧に戻る</a>
-                    <a href="#"><img src="/img/show-edit-button.png" alt="編集する"></a>
+                    <a href="#"><img src="/img/show-edit-button.png" height="80px" alt="編集する"></a>
                 </div>
             </div>
         </section>
