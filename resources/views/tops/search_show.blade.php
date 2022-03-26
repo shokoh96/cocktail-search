@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/search_show.css">
 </head>
+@extends('layouts.layouts')
+@section('content')
+    
 <body>
 
      <div class="guid">
@@ -75,4 +78,5 @@
     
     </div>
 </body>
+@endsection
 </html>

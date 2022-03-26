@@ -17,7 +17,7 @@
             <li><a class="menu4" href="">記録一覧</a></li>
         </ul>
     </header>
-
+    @yield('content')
     <footer class="footer">
         <h3>ここ酒</h3>
         <p>copyright &copy; 2022 the 5th class All Rights Reserved</p>
