@@ -17,12 +17,10 @@
     <script src="https://kit.fontawesome.com/fb677ce336.js" crossorigin="anonymous"></script>
 </head>
 
+@extends('layouts.layouts')
+@section('content')
 <body>
     <div class="container-bg">
-        <header class="header" id="page-top">
-
-        </header>
-
         <div class="container">
             <main>
                 <div class="main-top">
@@ -244,10 +242,7 @@
             </main>
         </div><!-- /.container -->
     </div><!-- /.container-bg -->
-
-    <footer class="footer">
-
-    </footer>
 </body>
+@endsection
 
 </html>
