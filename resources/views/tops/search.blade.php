@@ -23,26 +23,47 @@
                         <div class="content">
                             <div class="one">
                                 <label for="word">フリーワード</label>
-                                <input class="free" type="text" id="word" name="word" minlength="1" required
+                                <input class="free" type="text" id="word" name="word" minlength="1"
                                     maxlength="50" size="41" placeholder="マティーニ ライム シンプル etc…">
                             </div>
                         </div>
 
                         <div class="two">
                             <div class="content">
-                                <label for="base">お酒のベース</label>
+                                <label for="base_id">お酒のベース</label>
                                 <div class="select-wrap">
-                                    <select name="base" id="base"
-                                        {{ Form::select('base', ['ジン','ウォッカ','テキーラ','ラム','ウイスキー','ブランデー','リキュール','ワイン','ビール','日本酒','ノンアルコール']) }}
+                                    <select name="base_id" id="base_id"
+                                        {{ Form::select('base_id', [
+                                            null => '',
+                                            1 => 'ジン',
+                                            2 => 'ウォッカ',
+                                            3 => 'テキーラ',
+                                            4 => 'ラム',
+                                            5 => 'ウイスキー',
+                                            6 => 'ブランデー',
+                                            7 => 'リキュール',
+                                            8 => 'ワイン',
+                                            9 => 'ビール',
+                                            10 => '日本酒',
+                                            0 => 'ノンアルコール',
+                                        ]) }}
                                         </select>
                                 </div>
                             </div>
 
                             <div class="content">
-                                <label for="taste">甘口-辛口</label>
+                                <label for="taste_id">甘口-辛口</label>
                                 <div class="select-wrap">
-                                    <select name="taste" id="taste"
-                                        {{ Form::select('taste', ['甘口', '中甘口', '中口', '中辛口', '辛口']) }} </select>
+                                    <select name="taste_id" id="taste_id"
+                                        {{ Form::select('taste_id', [
+                                            null => '',
+                                            1 => '甘口',
+                                            2 => '中甘口',
+                                            3 => '中口',
+                                            4 => '中辛口',
+                                            5 => '辛口',
+                                        ]) }}
+                                        </select>
                                 </div>
                             </div>
 

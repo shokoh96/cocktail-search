@@ -10,10 +10,10 @@ class SearchController extends Controller
     public function index(Request $request)
     {
         $word = $request->word;
-        $base = $request->base;
-        $taste = $request->taste;
+        $base = $request->base_id;
+        $taste = $request->taste_id;
 
-        $url = "https://cocktail-f.com/api/v1/cocktails?" . 'word=' . $word . '&' . 'base=' . $base . '&' . 'taste' . $taste;
+        $url = "https://cocktail-f.com/api/v1/cocktails?" . 'word=' . $word . '&' . 'base=' . $base . '&' . 'taste=' . $taste;
         $method = "GET";
 
         //接続
