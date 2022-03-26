@@ -16,59 +16,60 @@
             ヘッダー
         </header>
         <section class="body">
-
-            <div class="search">
-                <div class="serchin">
-                    <img src="/img/search-pic1.png" alt="文字装飾" class="pic1">
-                    <div class="content">
-                        <div class="one">
-                            <label for="name">フリーワード</label>
-                            <input class="free" type="text" id="name" name="name" required minlength="1"
-                                maxlength="50" size="41" placeholder="マティーニ ライム シンプル etc…">
+            <form method="get" action="{{ route('searches.index') }}">
+                <div class="search">
+                    <div class="serchin">
+                        <img src="/img/search-pic1.png" alt="文字装飾" class="pic1">
+                        <div class="content">
+                            <div class="one">
+                                <label for="name">フリーワード</label>
+                                <input class="free" type="text" id="name" name="name" required minlength="1"
+                                    maxlength="50" size="41" placeholder="マティーニ ライム シンプル etc…">
+                            </div>
                         </div>
+
+                        <div class="two">
+                            <div class="content">
+                                <label for="name">お酒のベース</label>
+                                <div class="select-wrap">
+                                    <select name="" id="">
+                                        <option value=""></option>
+                                        <option value="">SELECT.01</option>
+                                        <option value="">SELECT.02</option>
+                                        <option value="">SELECT.03</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="content">
+                                <label for="name">甘口-辛口</label>
+                                <div class="select-wrap">
+                                    <select name="" id="">
+                                        <option value=""></option>
+                                        <option value="">甘口</option>
+                                        <option value="">中辛</option>
+                                        <option value="">辛口</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="content">
+                                <label for="name">味の特徴</label>
+                                <div class="select-wrap">
+                                    <select name="" id="">
+                                        <option value=""></option>
+                                        <option value="">SELECT.01</option>
+                                        <option value="">SELECT.02</option>
+                                        <option value="">SELECT.03</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <img src="/img/search-pic2.png" alt="カクテルの画像" class="pic2">
+                        </div>
+                        <button class="button" href="#"><img src="/img/search-button.png" alt="検索ボタン"></button>
                     </div>
-
-                    <div class="two">
-                        <div class="content">
-                            <label for="name">お酒のベース</label>
-                            <div class="select-wrap">
-                                <select name="" id="">
-                                    <option value=""></option>
-                                    <option value="">SELECT.01</option>
-                                    <option value="">SELECT.02</option>
-                                    <option value="">SELECT.03</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <div class="content">
-                            <label for="name">甘口-辛口</label>
-                            <div class="select-wrap">
-                                <select name="" id="">
-                                    <option value=""></option>
-                                    <option value="">甘口</option>
-                                    <option value="">中辛</option>
-                                    <option value="">辛口</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <div class="content">
-                            <label for="name">味の特徴</label>
-                            <div class="select-wrap">
-                                <select name="" id="">
-                                    <option value=""></option>
-                                    <option value="">SELECT.01</option>
-                                    <option value="">SELECT.02</option>
-                                    <option value="">SELECT.03</option>
-                                </select>
-                            </div>
-                        </div>
-                        <img src="/img/search-pic2.png" alt="カクテルの画像" class="pic2">
-                    </div>
-                    <a class="button" href="#"><img src="/img/search-button.png" alt="検索ボタン"></a>
                 </div>
-            </div>
+            </form>
         </section>
 
         <div class="push"></div>
