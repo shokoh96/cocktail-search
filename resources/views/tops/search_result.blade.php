@@ -15,14 +15,8 @@
     <script src="https://kit.fontawesome.com/7d803bff65.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header class="header"  id="page-top">
-        <ul class="item">
-            <li><a class="menu" href="">新規登録</a></li>
-            <li><a class="menu2" href="">ログイン</a></li>
-            <li><a class="menu3" href="">お酒検索</a></li>
-            <li><a class="menu4" href="">記録一覧</a></li>
-        </ul>
-    </header>
+@extends('layouts.layouts')
+@section('content')
     <main class="main">
         <div class="main-top">
 
@@ -156,9 +150,6 @@
             <a href="#page-top"><img class="top-btn-img" src="img/top.png" alt=""></a>
         </div>
     </main>
-    <footer class="footer">
-        <h3>ここ酒</h3>
-        <p>copyright &copy; 2022 the 5th class All Rights Reserved</p>
-    </footer>
+    @endsection
 </body>
 </html>
