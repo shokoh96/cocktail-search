@@ -302,6 +302,24 @@ footer {
   letter-spacing: 0.2em
 }
 
+.detail img {
+  transition: .3s;
+}
+
+.detail img:hover,
+.btn:hover {
+  opacity: 0.8;
+  transition: .3s;
+}
+
+.detail img:active,
+.nav-link img:active {
+  -webkit-transform: translate(0, 2px);
+  -moz-transform: translate(0, 2px);
+  transform: translate(0, 2px);
+  border-bottom: none;
+}
+
 .push {
   height: 412px;
 
