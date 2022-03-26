@@ -7,11 +7,13 @@ use GuzzleHttp\Client;
 
 class SearchController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
-        // $tag_id = "laravel";
+        $word = $request->word;
+        $base = $request->base;
+        $taste = $request->taste;
 
-        $url = "https://cocktail-f.com/api/v1/cocktails";
+        $url = "https://cocktail-f.com/api/v1/cocktails?" . 'word=' . $word . '&' . 'base=' . $base . '&' . 'taste' . $taste;
         $method = "GET";
 
         //接続

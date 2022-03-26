@@ -22,34 +22,27 @@
                         <img src="/img/search-pic1.png" alt="文字装飾" class="pic1">
                         <div class="content">
                             <div class="one">
-                                <label for="name">フリーワード</label>
-                                <input class="free" type="text" id="name" name="name" required minlength="1"
+                                <label for="word">フリーワード</label>
+                                <input class="free" type="text" id="word" name="word" minlength="1" required
                                     maxlength="50" size="41" placeholder="マティーニ ライム シンプル etc…">
                             </div>
                         </div>
 
                         <div class="two">
                             <div class="content">
-                                <label for="name">お酒のベース</label>
+                                <label for="base">お酒のベース</label>
                                 <div class="select-wrap">
-                                    <select name="" id="">
-                                        <option value=""></option>
-                                        <option value="">SELECT.01</option>
-                                        <option value="">SELECT.02</option>
-                                        <option value="">SELECT.03</option>
-                                    </select>
+                                    <select name="base" id="base"
+                                        {{ Form::select('base', ['ジン','ウォッカ','テキーラ','ラム','ウイスキー','ブランデー','リキュール','ワイン','ビール','日本酒','ノンアルコール']) }}
+                                        </select>
                                 </div>
                             </div>
 
                             <div class="content">
-                                <label for="name">甘口-辛口</label>
+                                <label for="taste">甘口-辛口</label>
                                 <div class="select-wrap">
-                                    <select name="" id="">
-                                        <option value=""></option>
-                                        <option value="">甘口</option>
-                                        <option value="">中辛</option>
-                                        <option value="">辛口</option>
-                                    </select>
+                                    <select name="taste" id="taste"
+                                        {{ Form::select('taste', ['甘口', '中甘口', '中口', '中辛口', '辛口']) }} </select>
                                 </div>
                             </div>
 
@@ -57,10 +50,7 @@
                                 <label for="name">味の特徴</label>
                                 <div class="select-wrap">
                                     <select name="" id="">
-                                        <option value=""></option>
-                                        <option value="">SELECT.01</option>
-                                        <option value="">SELECT.02</option>
-                                        <option value="">SELECT.03</option>
+                                        {{-- {{ Form::select('age', ['Under 18', '19 to 64', 'Over 65']) }} --}}
                                     </select>
                                 </div>
                             </div>
