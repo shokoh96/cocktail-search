@@ -26,10 +26,10 @@ Route::get('/search', function () {
     return view('tops.search');
 });
 
-Route::get('/search_result', function () {
-});
-
 Route::get('/search_result', 'SearchController@index')->name('searches.index');
+
+
+
 
 Route::get('/records_show', function () {
     return view('records.show');

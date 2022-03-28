@@ -1,13 +1,15 @@
 /* ページ内リンクの挙動をゆっくりにする */
 
-html { scroll-behavior: smooth;}
+html {
+    scroll-behavior: smooth;
+}
 
 /* フォント */
 
 @font-face {
     font-family: "せのびレギュラー";
     src: url("fonts/Senobi-Gothic-Regular\ 20.58.13.ttf");
-  }
+}
 
 /* header */
 
@@ -15,7 +17,7 @@ html { scroll-behavior: smooth;}
     width: 100%;
     height: 100px;
     background: linear-gradient(#315369, #315166);
-    border-bottom: solid 3px #FCE4E7;
+    border-bottom: solid 3px #fce4e7;
 }
 
 .item {
@@ -28,7 +30,7 @@ html { scroll-behavior: smooth;}
 
 .menu {
     font-size: 16px;
-    color: #FCE4E7;
+    color: #fce4e7;
     text-decoration: none;
     display: block;
     margin: 0 28px 0 54px;
@@ -37,7 +39,7 @@ html { scroll-behavior: smooth;}
 
 .menu2 {
     font-size: 16px;
-    color: #FCE4E7;
+    color: #fce4e7;
     text-decoration: none;
     display: block;
     margin: 0 29px;
@@ -46,7 +48,7 @@ html { scroll-behavior: smooth;}
 
 .menu3 {
     font-size: 16px;
-    color: #FCE4E7;
+    color: #fce4e7;
     text-decoration: none;
     display: block;
     margin: 0 30px;
@@ -55,7 +57,7 @@ html { scroll-behavior: smooth;}
 
 .menu4 {
     font-size: 16px;
-    color: #FCE4E7;
+    color: #fce4e7;
     text-decoration: none;
     display: block;
     margin: 0 30px;
@@ -64,7 +66,7 @@ html { scroll-behavior: smooth;}
 
 .item a:hover {
     opacity: 0.5;
-} 
+}
 
 .container {
     width: 1510px;
@@ -87,23 +89,23 @@ html { scroll-behavior: smooth;}
 -------------------------------- */
 .pagination-top {
     margin-top: 32px;
-  }
-  .pagination {
+}
+.pagination {
     display: flex;
     white-space: nowrap;
-  }
-  .pagination-inner {
+}
+.pagination-inner {
     width: 520px;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-  }
-  .pagination-page {
+}
+.pagination-page {
     font-size: 14px;
     line-height: 1;
-  }
-  .pagination-page strong,
-  .pagination-page a {
+}
+.pagination-page strong,
+.pagination-page a {
     position: relative;
     display: inline-block;
     min-width: 43px;
@@ -112,9 +114,9 @@ html { scroll-behavior: smooth;}
     text-align: center;
     box-sizing: border-box;
     background-color: rgba(255, 255, 255, 0.8);
-  }
-  .pagination-page strong:before,
-  .pagination-page a:before {
+}
+.pagination-page strong:before,
+.pagination-page a:before {
     content: "";
     position: absolute;
     top: 0;
@@ -123,39 +125,39 @@ html { scroll-behavior: smooth;}
     height: 100%;
     border: none;
     box-sizing: border-box;
-  }
-  .pagination-page strong {
+}
+.pagination-page strong {
     font-weight: 400;
     opacity: 0.5;
-  }
-  .pagination-page a {
+}
+.pagination-page a {
     text-decoration: none;
     transition: all 0.5s;
-  }
-  .pagination-page a:hover {
+}
+.pagination-page a:hover {
     opacity: 0.5;
-  }
-  .pagination-page strong span,
-  .pagination-page a span {
+}
+.pagination-page strong span,
+.pagination-page a span {
     display: block;
     margin-top: 14px;
     font-family: "せのびレギュラー";
     font-size: 17px;
     color: #355469;
-  }
-  .pagination-omission {
+}
+.pagination-omission {
     margin-left: 5px;
     color: #fff;
-  }
-  .pagination-next,
-  .pagination-prev,
-  .pagination-last {
+}
+.pagination-next,
+.pagination-prev,
+.pagination-last {
     font-size: 14px;
     line-height: 1;
-  }
-  .pagination-next a,
-  .pagination-prev a,
-  .pagination-last a {
+}
+.pagination-next a,
+.pagination-prev a,
+.pagination-last a {
     position: relative;
     display: inline-flex;
     align-items: center;
@@ -167,44 +169,44 @@ html { scroll-behavior: smooth;}
     text-decoration: none;
     box-sizing: border-box;
     transition: all 0.5s;
-  }
-  .pagination-next a:hover,
-  .pagination-prev a:hover,
-  .pagination-last a:hover {
+}
+.pagination-next a:hover,
+.pagination-prev a:hover,
+.pagination-last a:hover {
     opacity: 0.5;
-  }
-  .pagination-next a {
+}
+.pagination-next a {
     width: 55px;
     height: 45px;
     padding-left: 13px;
-  }
-  .pagination-next a:after,
-  .pagination-next a:before,
-  .pagination-prev a:after,
-  .pagination-prev a:before {
+}
+.pagination-next a:after,
+.pagination-next a:before,
+.pagination-prev a:after,
+.pagination-prev a:before {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     box-sizing: border-box;
-  }
-  .pagination-next a span {
+}
+.pagination-next a span {
     margin-right: 2px;
-  }
-  .pagination-last {
+}
+.pagination-last {
     margin-right: 5px;
     margin-left: -2px;
-  }
-  .pagination-last a {
+}
+.pagination-last a {
     width: 70px;
     height: 45px;
-  }
+}
 
 /* main-middle */
 
 .main-middle {
-    height: 1100px;
+    height: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -230,13 +232,16 @@ html { scroll-behavior: smooth;}
     position: relative;
     border-radius: 10%;
 }
+.card:hover {
+    transform: scale(1.02);
+    transition-duration: 0.5s;
+}
 
 .card-img-top {
     width: 100%;
     height: 100%;
     border-radius: 10%;
     object-fit: cover;
-
 }
 
 .card-body {
@@ -268,7 +273,7 @@ html { scroll-behavior: smooth;}
 -------------------------------- */
 .pagination-bottom {
     margin-top: 0;
-  }
+}
 
 /* ページトップボタン */
 
@@ -295,7 +300,12 @@ html { scroll-behavior: smooth;}
 .footer {
     width: 100%;
     height: 100px;
-    background: linear-gradient(#00577c 0%, #004562 0%, #003f59 0%, #002c3e 100%);
+    background: linear-gradient(
+        #00577c 0%,
+        #004562 0%,
+        #003f59 0%,
+        #002c3e 100%
+    );
     display: flex;
     flex-direction: column;
     justify-content: center;

@@ -34,7 +34,7 @@
                                 <div class="select-wrap">
                                     <select name="base_id" id="base_id"
                                         {{ Form::select('base_id', [
-                                            null => '',
+                                            null => '選択なし',
                                             1 => 'ジン',
                                             2 => 'ウォッカ',
                                             3 => 'テキーラ',
@@ -56,7 +56,7 @@
                                 <div class="select-wrap">
                                     <select name="taste_id" id="taste_id"
                                         {{ Form::select('taste_id', [
-                                            null => '',
+                                            null => '選択なし',
                                             1 => '甘口',
                                             2 => '中甘口',
                                             3 => '中口',
