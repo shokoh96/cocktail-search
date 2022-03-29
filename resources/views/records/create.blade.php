@@ -96,7 +96,7 @@
                             </div>
                             <div class="form-bottom">
                                 <h4>コメント（５００文字）</h4>
-                                <textarea  name="comments" cols="110" rows="10"></textarea>
+                                <textarea  name="comment" cols="110" rows="10"></textarea>
                             </div>
                             <!-- 登録ボタン -->
                             <div class="register">

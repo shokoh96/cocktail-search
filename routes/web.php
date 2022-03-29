@@ -39,17 +39,17 @@ Route::get('/records_show', function () {
     return view('records.show');
 });
 
-Route::get('/records_index', function () {
-    return view('records.index');
-});
+// Route::get('/records_index', function () {
+//     return view('records.index');
+// });
 
-Route::get('/records_edit', function () {
-    return view('records.edit');
-});
+// Route::get('/records_edit', function () {
+//     return view('records.edit');
+// });
 
-Route::get('/records_create', function () {
-    return view('records.create');
-});
+// Route::get('/records_create', function () {
+//     return view('records.create');
+// });
 
 Auth::routes();
 
@@ -60,3 +60,9 @@ Route::get('/records', 'MemoController@index')->name('records.index');
 Route::get('/records_create', 'MemoController@create')->name('records.create');
 
 Route::post('/records', 'MemoController@store')->name('records.store');
+
+
+
+Route::get('/records/{id}/edit', 'MemoController@edit')->name('records.edit');
+
+Route::put('/records/{id}', 'MemoController@update')->name('records.update');

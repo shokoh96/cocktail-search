@@ -36,4 +36,12 @@ class MemoController extends Controller
         $records->save();
         return redirect() -> route('records.index');
     }
+
+
+
+    public function edit($id)
+     {
+        $record = Memo::find($id);
+        return view('records.edit', compact('record'));
+     }
 }
