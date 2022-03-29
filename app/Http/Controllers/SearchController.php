@@ -12,8 +12,18 @@ class SearchController extends Controller
         $word = $request->word;
         $base = $request->base_id;
         $taste = $request->taste_id;
+        $alcohol = $request->alcohol;
 
-        $url = "https://cocktail-f.com/api/v1/cocktails?" . 'word=' . $word . '&' . 'base=' . $base . '&' . 'taste=' . $taste;
+        if ($alcohol !== null) {
+            $alcohol = explode(" ", $alcohol);
+            $alcohol_from = (int) $alcohol[0];
+            $alcohol_to = (int) $alcohol[1];
+        } else {
+            $alcohol_from = '';
+            $alcohol_to = '';
+        }
+
+        $url = "https://cocktail-f.com/api/v1/cocktails?" . 'word=' . $word . '&' . 'base=' . $base . '&' . 'taste=' . $taste . '&' . 'alcohol_from=' . $alcohol_from . '&' . 'alcohol_to=' . $alcohol_to;
         $method = "GET";
 
         //接続

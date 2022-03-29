@@ -68,11 +68,19 @@
                             </div>
 
                             <div class="content">
-                                <label for="name">味の特徴</label>
+                                <label for="alcohol">度数</label>
                                 <div class="select-wrap">
-                                    <select name="" id="">
-                                        {{-- {{ Form::select('age', ['Under 18', '19 to 64', 'Over 65']) }} --}}
-                                    </select>
+                                    <select name="alcohol" id="alcohol"
+                                        {{ Form::select('alcohol', [
+                                            null => '選択なし',
+                                            '0 0' => 'ノンアルコール',
+                                            '1 10' => '1~10(弱め)',
+                                            '11 20' => '11~20(普通)',
+                                            '21 30' => '21~30(やや強い)',
+                                            '31 40' => '31~40(強い)',
+                                            '41 100' => '41~ (とても強い)',
+                                        ]) }}
+                                        </select>
                                 </div>
                             </div>
                             <img src="/img/search-pic2.png" alt="カクテルの画像" class="pic2">
