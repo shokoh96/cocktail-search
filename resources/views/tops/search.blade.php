@@ -9,12 +9,9 @@
     <link rel="stylesheet" href="css/search.css">
     <title>検索結果 - ここ酒</title>
 </head>
-
-<body>
+{{-- @extends('layouts.layouts')
+@section('content') --}}
     <div class="container">
-        <header>
-            ヘッダー
-        </header>
         <section class="body">
             <form method="get" action="{{ route('searches.index') }}">
                 <div class="search">
@@ -90,13 +87,7 @@
                 </div>
             </form>
         </section>
-
-        <div class="push"></div>
-
-        <footer>
-            フッター
-        </footer>
     </div>
-</body>
-
+    @yield('search')
+    {{-- @endsection --}}
 </html>
