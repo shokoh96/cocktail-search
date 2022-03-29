@@ -2,6 +2,10 @@
     font-family: "せのびゴシック";
     src: url("../fonts/Senobi-Gothic-Bold.ttf");
 }
+@font-face {
+    font-family: "せのびレギュラー";
+    src: url("../fonts/Senobi-Gothic-Regular\ 20.58.13.ttf");
+}
 
 header {
     height: 129px;
@@ -12,7 +16,7 @@ body {
     height: auto;
     color: #fff;
     font-size: 30px;
-    font-family: "せのびゴシック";
+    font-family: "せのびレギュラー";
     background: -moz-linear-gradient(top, #355469, #1b2a35);
     background: -webkit-linear-gradient(top, #355469, #1b2a35);
     background: linear-gradient(to bottom, #355469, #1b2a35);
@@ -81,7 +85,7 @@ form {
 
 label {
     padding-bottom: 23px;
-    font-family: "せのびゴシック";
+    font-family: "せのびレギュラー";
 }
 
 input.free {

@@ -29,8 +29,6 @@ Route::get('/search', function () {
 Route::get('/search_result', 'SearchController@index')->name('searches.index');
 
 
-
-
 Route::get('/records_show', function () {
     return view('records.show');
 });
