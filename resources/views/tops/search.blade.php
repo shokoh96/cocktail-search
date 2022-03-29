@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="css/search.css">
     <title>検索結果 - ここ酒</title>
 </head>
-@extends('layouts.layouts')
-@section('content')
+{{-- @extends('layouts.layouts')
+@section('content') --}}
     <div class="container">
         <section class="body">
 
@@ -66,9 +66,9 @@
                     <a class="button" href="#"><img src="/img/search-button.png" alt="検索ボタン"></a>
                 </div>
             </div>
+            {{-- <div class="push"></div> --}}
         </section>
-
-        <div class="push"></div>
     </div>
-@endsection
+    @yield('search')
+    {{-- @endsection --}}
 </html>
