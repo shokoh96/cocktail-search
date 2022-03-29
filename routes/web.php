@@ -14,11 +14,11 @@ use Illuminate\Support\Facades\Auth;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
-Route::get('/top', function () {
+Route::get('/', function () {
     return view('tops.top');
 });
 
@@ -26,13 +26,7 @@ Route::get('/search', function () {
     return view('tops.search');
 });
 
-Route::get('/search_show', function () {
-    return view('tops.search_show');
-});
-
-Route::get('/search_result', function () {
-    return view('tops.search_result');
-});
+Route::get('/search_result', 'SearchController@index')->name('searches.index');
 
 
 Route::get('/records_show', function () {
