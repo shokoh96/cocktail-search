@@ -35,6 +35,10 @@
     src: url("../fonts/Senobi-Gothic-Bold.ttf");
 }
 @font-face {
+    font-family: "せのびレギュラー";
+    src: url("../fonts/Senobi-Gothic-Regular\ 20.58.13.ttf");
+}
+@font-face {
     font-family: "HarenosoraMincho";
     src: url("../fonts/Harenosora.otf");
 }
@@ -141,14 +145,15 @@ body {
     text-shadow: 5px 4px 3px rgba(0, 0, 0);
 }
 h1 {
-    font-family: "せのびゴシック";
+    font-family: "せのびレギュラー";
     margin-bottom: 25px;
     margin-left: -11px;
     font-size: 55px;
+    font-weight: normal;
     text-shadow: 5px 4px 3px rgba(0, 0, 0);
 }
 h1 + p {
-    font-family: "せのびゴシック";
+    font-family: "せのびレギュラー";
     font-size: 21px;
     text-shadow: 4px 3px 2px rgba(0, 0, 0);
 }
@@ -401,7 +406,7 @@ h1 + p {
     margin-top: 10px;
     margin-bottom: 10px;
     text-shadow: 3px 3px 3px black;
-    font-family: "せのびゴシック";
+    font-family: "せのびレギュラー";
 }
 .footer p {
     color: white;
