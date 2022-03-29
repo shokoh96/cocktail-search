@@ -48,3 +48,9 @@ Route::get('/records_create', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/records', 'MemoController@index')->name('records.index');
+
+Route::get('/records_create', 'MemoController@create')->name('records.create');
+
+Route::post('/records', 'MemoController@store')->name('records.store');
