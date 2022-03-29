@@ -8,6 +8,9 @@
     <title>検索結果</title>
     <!-- リセットcss -->
     <link rel="stylesheet" href="css/reset.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- 自作css -->
     <link rel="stylesheet" href="css/search_result.css">
     <!-- webフォント -->
@@ -64,17 +67,22 @@
             </div><!-- /.pagination-inner -->
         </div><!-- /.pagination-top -->
         <div class="main-middle">
-            @foreach ($posts as $post)
-                <div class="card">
-                    <a href="">
-                        <img src="img/ジントニック.jpeg" class="card-img-top" alt="">
-                        <div class="card-body">
-                            <h2 class="japanese">{{ $post['cocktail_name'] }}</h2>
-                            <h4 class="english">{{ $post['cocktail_name_english'] }}</h4>
-                        </div>
-                    </a>
-                </div>
-            @endforeach
+
+            <div class="cards">
+                <div class="row">
+                    @foreach ($posts as $post)
+                        <a href="#" class="col-lg-4 col-md-6">
+                            <div class="card">
+                                <img src="img/Sample-img.jpg" alt="" class="card-img">
+                                <div class="card-body">
+                                    <h2 class="japanese">{{ $post['cocktail_name'] }}</h2>
+                                    <h4 class="english">{{ $post['cocktail_name_english'] }}</h4>
+                                </div><!-- /.card-body -->
+                            </div><!-- /.card -->
+                        </a>
+                    @endforeach
+                </div><!-- /.row -->
+            </div><!-- /.cards -->
 
             <div class="pagination pagination-bottom">
                 <div class="pagination-inner">

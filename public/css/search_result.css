@@ -8,7 +8,11 @@ html {
 
 @font-face {
     font-family: "せのびレギュラー";
-    src: url("fonts/Senobi-Gothic-Regular\ 20.58.13.ttf");
+    src: url("../fonts/Senobi-Gothic-Regular\ 20.58.13.ttf");
+}
+@font-face {
+    font-family: "せのびゴシック";
+    src: url("../fonts/Senobi-Gothic-Bold.ttf");
 }
 
 /* header */
@@ -213,66 +217,90 @@ html {
     margin-top: 55px;
 }
 
-.cade a {
-    display: block;
-    border-radius: 10%;
-    margin-bottom: 0;
-    transform: scale(1.02);
-    transition-duration: 0.5s;
+/* --------------------------------
+            .cards
+-------------------------------- */
+.cards {
+    margin-top: 30px;
 }
-
-.cade a:hover {
-    opacity: 0.5;
+.row {
+    max-width: 1100px;
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
 }
-
+@media (min-width: 1550px) {
+    .row {
+        max-width: 1236px;
+    }
+}
+.row > * {
+    padding-right: calc(var(--bs-gutter-x) * 0.9);
+    padding-left: calc(var(--bs-gutter-x) * 0.6);
+}
+.row a {
+    color: #fff;
+    text-decoration: none;
+}
+.row a:nth-child(n + 4) {
+    margin-top: 75px;
+}
 .card {
-    width: 355px;
-    height: 435px;
-    margin: 0 18px;
     position: relative;
-    border-radius: 10%;
+    height: 455px;
+    border: none;
+    border-radius: 49px;
 }
 .card:hover {
     transform: scale(1.02);
     transition-duration: 0.5s;
 }
-
-.card-img-top {
-    width: 100%;
+.card-img {
     height: 100%;
-    border-radius: 10%;
-    object-fit: cover;
+    background-size: cover;
+    border-radius: 38px;
 }
-
+@media (max-width: 760px) {
+    .card-img {
+        height: auto;
+        max-height: 700px;
+    }
+}
 .card-body {
-    width: 355px;
-    height: 123px;
-    background-color: rgba(255, 255, 255, 0.7);
     position: absolute;
-    top: 72%;
-    border-radius: 0 0 40px 40px;
-    color: black;
+    bottom: 0;
+    height: 130px;
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.69);
+    border-radius: 0px 0px 38px 38px;
 }
 
 .japanese {
-    font-size: 30px;
+    font-size: 27px;
     text-align: center;
     margin-top: 30px;
-    font-family: せのびゴシック;
+    letter-spacing: -0.1rem;
+    color: #000;
+    font-family: "せのびゴシック";
 }
 
 .english {
     text-align: center;
     font-size: 20px;
-    margin-top: 17px;
-    font-family: せのびゴッシク;
+    margin-top: 15px;
+    color: #000;
+    font-family: "せのびゴシック";
 }
 
 /* --------------------------------
         .pagination-bottom
 -------------------------------- */
 .pagination-bottom {
-    margin-top: 0;
+    margin-top: 43px;
 }
 
 /* ページトップボタン */

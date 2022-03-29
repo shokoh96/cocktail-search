@@ -1,6 +1,6 @@
 @font-face {
     font-family: "せのびゴシック";
-    src: url("../fonts/Senobi-Gothic.ttf");
+    src: url("../fonts/Senobi-Gothic-Bold.ttf");
 }
 
 header {
@@ -41,8 +41,12 @@ img.pic2 {
     position: relative;
 }
 
-.search {
+form {
     width: 1448px;
+    margin: 0 auto;
+}
+
+.search {
     height: 539px;
     background-image: url("/img/search-back.png");
     display: flex;
@@ -50,7 +54,6 @@ img.pic2 {
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin: auto;
 }
 
 .serchin {
