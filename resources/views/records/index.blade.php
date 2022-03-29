@@ -90,118 +90,20 @@
                     </div><!-- /.pagination-inner -->
                 </div><!-- /.pagination-top -->
 
-                @foreach ($requests as $request)
+                
                 <div class="cards">
                     <div class="row">
+                        @foreach ($records as $record)
                         <a href="#" class="col-lg-3 col-md-6">
                             <div class="card">
                                 <img src="img/Sample-img.jpg" alt="" class="card-img">
                                 <div class="card-body">
-                                    <p class="card-title">{{ $request->name }}</p>
+                                    <p class="card-title">{{ $record->name }}</p>
                                     <p class="card-date">2022 - 03 -03</p>
                                 </div><!-- /.card-body -->
                             </div><!-- /.card -->
                         </a>
-                @endforeach
-                        <a href="#" class="col-lg-3 col-md-6">
-                            <div class="card">
-                                <img src="img/Sample-img.jpg" alt="" class="card-img">
-                                <div class="card-body">
-                                    <p class="card-title">ジントニック</p>
-                                    <p class="card-date">2022 - 03 -03</p>
-                                </div><!-- /.card-body -->
-                            </div><!-- /.card -->
-                        </a>
-                        <a href="#" class="col-lg-3 col-md-6">
-                            <div class="card">
-                                <img src="img/Sample-img.jpg" alt="" class="card-img">
-                                <div class="card-body">
-                                    <p class="card-title">ジントニック</p>
-                                    <p class="card-date">2022 - 03 -03</p>
-                                </div><!-- /.card-body -->
-                            </div><!-- /.card -->
-                        </a>
-                        <a href="#" class="col-lg-3 col-md-6">
-                            <div class="card">
-                                <img src="img/Sample-img.jpg" alt="" class="card-img">
-                                <div class="card-body">
-                                    <p class="card-title">ジントニック</p>
-                                    <p class="card-date">2022 - 03 -03</p>
-                                </div><!-- /.card-body -->
-                            </div><!-- /.card -->
-                        </a>
-                        <a href="#" class="col-lg-3 col-md-6">
-                            <div class="card">
-                                <img src="img/Sample-img.jpg" alt="" class="card-img">
-                                <div class="card-body">
-                                    <p class="card-title">ジントニック</p>
-                                    <p class="card-date">2022 - 03 -03</p>
-                                </div><!-- /.card-body -->
-                            </div><!-- /.card -->
-                        </a>
-                        <a href="#" class="col-lg-3 col-md-6">
-                            <div class="card">
-                                <img src="img/Sample-img.jpg" alt="" class="card-img">
-                                <div class="card-body">
-                                    <p class="card-title">ジントニック</p>
-                                    <p class="card-date">2022 - 03 -03</p>
-                                </div><!-- /.card-body -->
-                            </div><!-- /.card -->
-                        </a>
-                        <a href="#" class="col-lg-3 col-md-6">
-                            <div class="card">
-                                <img src="img/Sample-img.jpg" alt="" class="card-img">
-                                <div class="card-body">
-                                    <p class="card-title">ジントニック</p>
-                                    <p class="card-date">2022 - 03 -03</p>
-                                </div><!-- /.card-body -->
-                            </div><!-- /.card -->
-                        </a>
-                        <a href="#" class="col-lg-3 col-md-6">
-                            <div class="card">
-                                <img src="img/Sample-img.jpg" alt="" class="card-img">
-                                <div class="card-body">
-                                    <p class="card-title">ジントニック</p>
-                                    <p class="card-date">2022 - 03 -03</p>
-                                </div><!-- /.card-body -->
-                            </div><!-- /.card -->
-                        </a>
-                        <a href="#" class="col-lg-3 col-md-6">
-                            <div class="card">
-                                <img src="img/Sample-img.jpg" alt="" class="card-img">
-                                <div class="card-body">
-                                    <p class="card-title">ジントニック</p>
-                                    <p class="card-date">2022 - 03 -03</p>
-                                </div><!-- /.card-body -->
-                            </div><!-- /.card -->
-                        </a>
-                        <a href="#" class="col-lg-3 col-md-6">
-                            <div class="card">
-                                <img src="img/Sample-img.jpg" alt="" class="card-img">
-                                <div class="card-body">
-                                    <p class="card-title">ジントニック</p>
-                                    <p class="card-date">2022 - 03 -03</p>
-                                </div><!-- /.card-body -->
-                            </div><!-- /.card -->
-                        </a>
-                        <a href="#" class="col-lg-3 col-md-6">
-                            <div class="card">
-                                <img src="img/Sample-img.jpg" alt="" class="card-img">
-                                <div class="card-body">
-                                    <p class="card-title">ジントニック</p>
-                                    <p class="card-date">2022 - 03 -03</p>
-                                </div><!-- /.card-body -->
-                            </div><!-- /.card -->
-                        </a>
-                        <a href="#" class="col-lg-3 col-md-6">
-                            <div class="card">
-                                <img src="img/Sample-img.jpg" alt="" class="card-img">
-                                <div class="card-body">
-                                    <p class="card-title">ジントニック</p>
-                                    <p class="card-date">2022 - 03 -03</p>
-                                </div><!-- /.card-body -->
-                            </div><!-- /.card -->
-                        </a>
+                        @endforeach
                     </div><!-- /.row -->
                 </div><!-- /.cards -->
                 <div class="pagination pagination-bottom">

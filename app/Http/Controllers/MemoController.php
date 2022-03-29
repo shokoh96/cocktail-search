@@ -34,6 +34,6 @@ class MemoController extends Controller
         $records -> image4 = $request -> image4;
         $records -> user_id = Auth::id();
         $records->save();
-        // return redirect() -> route('records.index');
+        return redirect() -> route('records.index');
     }
 }
