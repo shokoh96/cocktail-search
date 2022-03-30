@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="{{ asset('css/search_show.css') }}">
 
 </head>
-@extends('layouts.layouts')
-@section('content')
+@extends('tops.search')
+@section('search')
 
     <body>
         <div class="search-box"></div>
