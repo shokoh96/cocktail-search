@@ -25,7 +25,7 @@
             </div>
             <div class="input-form-outside">
                 <div class="input-form">
-                    <form action="{{ route('records.update' $record->id) }}" method="POST">
+                    <form action="{{ route('records.update', $record->id) }}" method="POST">
                       @csrf
                       @method('put')
                         <div class="form-top">
