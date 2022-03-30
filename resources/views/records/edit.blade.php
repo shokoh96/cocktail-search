@@ -100,7 +100,7 @@
                         <!-- 登録ボタン -->
                         <div class="register-derete">
                             <button type="submit" class="register-btn">登録する</button>
-                            <button class="derete-btn">削除する</button>
+                            <button type="submit" onclick='return confirm("本当に削除しますか？");' class="derete-btn">削除する</button>
                         </div>
                     </form>
                 </div>
