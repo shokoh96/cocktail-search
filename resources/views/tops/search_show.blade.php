@@ -8,6 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="{{ asset('css/reset.css') }}">
     <link rel="stylesheet" href="{{ asset('css/layouts.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/search.css') }}">
     <link rel="stylesheet" href="{{ asset('css/search_show.css') }}">
 
 </head>
@@ -15,8 +16,6 @@
 @section('search')
 
     <body>
-        <div class="search-box"></div>
-
         <div class="guid">
             {{-- <a class="front" href="#">
             << 前へ</a> --}}
@@ -67,13 +66,13 @@
                 <p class="ex3">{{ $posts['cocktail_desc'] }}</p>
 
             </div>
-            <div class="guid2">
-                {{-- <div class="front">
-                    << 前へ</div> --}}
-                <div class="back">戻る</div>
-                {{-- <div class="next">次へ >></div> --}}
-            </div>
         </div>
+        <div class="guid2">
+            {{-- <a class="front" href="#">
+            << 前へ</a> --}}
+            <a href="javascript:history.back()">戻る</a>
+            {{-- <a class="next" href="#">次へ >></a> --}}
+        </div><!-- /.guid -->
     </body>
 @endsection
 

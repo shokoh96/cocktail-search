@@ -2,12 +2,6 @@ body {
     background: linear-gradient(#355469, #1d2d39);
 }
 
-.search-box {
-    height: 450px;
-    border: 1px solid #fff;
-    margin-top: 120px;
-}
-
 .guid {
     width: 300px;
     display: flex;
@@ -16,6 +10,7 @@ body {
     color: white;
     font-family: "Hiragino Kaku Gothic ProN";
     font-size: 18px;
+    padding-top: 200px;
 }
 .guid a {
     display: inline-block;
@@ -24,6 +19,25 @@ body {
     transition: all 0.5s;
 }
 .guid a:hover {
+    color: #fff;
+    opacity: 0.5;
+}
+.guid2 {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    margin: 50px auto 0;
+    color: white;
+    font-family: "Hiragino Kaku Gothic ProN";
+    font-size: 18px;
+}
+.guid2 a {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+.guid2 a:hover {
     color: #fff;
     opacity: 0.5;
 }
@@ -41,6 +55,7 @@ body {
     flex-direction: column;
     background-color: #d3d7da;
     border-radius: 40px;
+    padding: 43px 0;
     border: 1px solid #9e8b73;
 }
 
@@ -58,7 +73,7 @@ body {
 .picture-container {
     width: 375px;
     position: relative;
-    margin: 28px auto 30px;
+    margin: 0 auto 80px;
 }
 .picture {
     width: 375px;
@@ -86,7 +101,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     color: black;
-    font-size: 20px;
+    font-size: 18px;
     font-family: "Hiragino Kaku Gothic ProN";
 }
 
@@ -166,7 +181,6 @@ body {
 .ex {
     font-family: "Hiragino Kaku Gothic ProNc";
     font-size: 23px;
-    margin-top: 43px;
     color: #355469;
 }
 
@@ -175,7 +189,8 @@ body {
     color: #101112;
     font-family: "Noto Serif Myanmar";
     text-shadow: 1px 2px 3px rgb(155, 152, 152);
-    margin-top: 40px;
+    margin-top: 50px;
+    margin-bottom: 30px;
 }
 
 .box3 {
@@ -207,7 +222,7 @@ body {
 .ex2 {
     color: black;
     width: 550px;
-    margin-top: 60px;
+    margin-top: 40px;
     margin-left: auto;
     margin-right: auto;
     text-align: left;
@@ -234,26 +249,13 @@ body {
 
 .hr {
     border-top: 1px solid #baa68b;
-    width: 350px;
+    width: 400px;
     margin: 0 auto;
 }
 
 .hr3 {
-    width: 550px;
+    width: 600px;
     border-top: 1px dashed #baa68b;
     margin: 0 auto;
-    margin-top: 80px;
-}
-
-.guid2 {
-    width: 300px;
-    display: flex;
-    justify-content: space-between;
-    margin-left: auto;
-    margin-right: auto;
-    color: white;
-    font-family: "Hiragino Kaku Gothic ProN";
-    margin-top: 75px;
-    /* padding-top: 75px; */
-    font-size: 18px;
+    margin-top: 50px;
 }
