@@ -100,7 +100,7 @@
                 </div>
             </div>
             <div class="memory">
-                <a class="memory-list" href="">>> 思い出一覧に戻る</a>
+                <a class="memory-list" href="{{ route('records.store') }}">>> 思い出一覧に戻る</a>
             </div>
             <!-- ページトップボタン -->
             <div class="page-top-btn">
