@@ -6,7 +6,7 @@ body {
     width: 300px;
     display: flex;
     justify-content: center;
-    margin: 65px auto 30px;
+    margin: 65px auto 40px;
     color: white;
     font-family: "Hiragino Kaku Gothic ProN";
     font-size: 18px;
@@ -26,7 +26,7 @@ body {
     width: 300px;
     display: flex;
     justify-content: center;
-    margin: 50px auto 0;
+    margin: 50px auto 80px;
     color: white;
     font-family: "Hiragino Kaku Gothic ProN";
     font-size: 18px;
