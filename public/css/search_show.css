@@ -1,65 +1,98 @@
+body {
+    background: linear-gradient(#355469, #1d2d39);
+}
 
-.guid{
+.guid {
     width: 300px;
     display: flex;
-    justify-content: space-between;
-    margin-left: auto;
-    margin-right: auto;
+    justify-content: center;
+    margin: 65px auto 30px;
     color: white;
     font-family: "Hiragino Kaku Gothic ProN";
-    margin-bottom: 50px;
+    font-size: 18px;
+    padding-top: 200px;
+}
+.guid a {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+.guid a:hover {
+    color: #fff;
+    opacity: 0.5;
+}
+.guid2 {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    margin: 50px auto 0;
+    color: white;
+    font-family: "Hiragino Kaku Gothic ProN";
     font-size: 18px;
 }
-
-
-body{
-    background: linear-gradient(#355469,#1D2D39);
-    min-height: 100vh;
-    padding: 500px 100px 300px 100px;
+.guid2 a {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+.guid2 a:hover {
+    color: #fff;
+    opacity: 0.5;
 }
 
-
-
-.box{
+.box {
+    max-width: 1200px;
     text-align: center;
     padding: 60px;
-    background-color: #D3D8DB;
-    height: 1430px;
-    border-radius:40px;
-}
-
-.box2{
-    flex-direction: column;
-    background-color: #D3D7DA;
-    height: 1430px;
+    background-color: #d3d8db;
     border-radius: 40px;
-    border:1px solid #9e8b73;
+    margin: 0 auto;
 }
 
-.container{
+.box2 {
+    flex-direction: column;
+    background-color: #d3d7da;
+    border-radius: 40px;
+    padding: 43px 0;
+    border: 1px solid #9e8b73;
+}
+
+.container {
     display: flex;
     flex-direction: column;
 }
 
-.container2{
+.container2 {
     display: flex;
     justify-content: space-around;
     text-shadow: 1px 2px 3px rgb(141, 139, 139);
 }
 
-.container3{
+.picture-container {
+    width: 375px;
+    position: relative;
+    margin: 0 auto 80px;
+}
+.picture {
+    width: 375px;
+    height: 445px;
+}
+.container3 {
+    position: absolute;
+    right: -158px;
+    bottom: 22px;
     display: flex;
     flex-wrap: wrap;
-    width:200px;
+    align-content: space-between;
+    width: 200px;
     height: 180px;
-    position: absolute;
-    top:1080px ;
-    left: 850px;
-    font-size:20px;
+    font-size: 20px;
     color: #355469;
 }
 
-.container4{
+.container4 {
     display: flex;
     justify-content: space-between;
     width: 350px;
@@ -67,100 +100,100 @@ body{
     margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
-    color:black;
+    color: black;
+    font-size: 18px;
+    font-family: "Hiragino Kaku Gothic ProN";
+}
+
+.container5 {
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+    height: 50px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+    font-size: 18px;
+    font-family: "Hiragino Kaku Gothic ProN";
+}
+
+.container6 {
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+    height: 50px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+    font-size: 18px;
+    font-family: "Hiragino Kaku Gothic ProN";
+}
+
+.box5 {
+    width: 88px;
+    height: 42px;
+    background-color: #81725e;
+    color: white;
+    line-height: 42px;
+    box-shadow: 2px 2px 4px inset #4d4439;
+}
+
+.box6 {
+    width: 100px;
+    padding-top: 5px;
+    padding-right: 10px;
     font-size: 20px;
-    font-family: "Hiragino Kaku Gothic ProN";
 }
 
-
-.container5{
-    display: flex;
-    justify-content: space-between;
-    width: 350px;
-    height: 50px;
-    margin-top: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    color:black;
-    font-size: 18px;
-    font-family: "Hiragino Kaku Gothic ProN";
-}
-
-
-.container6{
-    display: flex;
-    justify-content: space-between;
-    width: 350px;
-    height: 50px;
-    margin-top: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    color:black;
-    font-size: 18px;
-    font-family: "Hiragino Kaku Gothic ProN";
-}
-
-
-
-.box5{
-    width: 100px;
-    background-color: #81725E;
-    height: 35px;
+.box7 {
+    width: 88px;
+    height: 42px;
+    background-color: #81725e;
     color: white;
-    padding-top: 2px;
+    line-height: 42px;
     box-shadow: 2px 2px 4px inset #4d4439;
 }
 
-.box6{
+.box8 {
     width: 100px;
-    padding-top: 2px;
+    padding-top: 7px;
+    padding-left: 10px;
+    font-size: 20px;
 }
 
-.box7{
-    width: 100px;
-    background-color: #81725E;
-    height: 35px;
+.box9 {
+    width: 88px;
+    height: 42px;
+    background-color: #81725e;
     color: white;
-    padding-top: 2px;
+    line-height: 42px;
     box-shadow: 2px 2px 4px inset #4d4439;
 }
 
-.box8{
+.box10 {
     width: 100px;
-    padding-top: 2px;
+    padding-top: 7px;
+    font-size: 20px;
 }
 
-.box9{
-    width: 100px;
-    background-color: #81725E;
-    height: 35px;
-    color: white;
-    padding-top: 2px;
-    box-shadow: 2px 2px 4px inset #4d4439;
-}
-
-.box10{
-    width: 100px;
-    padding-top: 2px;
-}
-
-
-.ex{
+.ex {
     font-family: "Hiragino Kaku Gothic ProNc";
     font-size: 23px;
-    margin-top: 50px;
     color: #355469;
 }
 
-.zin{
+.zin {
     font-size: 43px;
-    color: black;
+    color: #101112;
     font-family: "Noto Serif Myanmar";
     text-shadow: 1px 2px 3px rgb(155, 152, 152);
-    margin-top: 40px;
+    margin-top: 50px;
+    margin-bottom: 30px;
 }
 
-.box3{
+.box3 {
     width: 140px;
     height: 25px;
     z-index: 10;
@@ -173,7 +206,7 @@ body{
     box-shadow: 2px 2px 4px inset #243a49;
 }
 
-.box4{
+.box4 {
     width: 140px;
     height: 25px;
     z-index: 10;
@@ -186,16 +219,10 @@ body{
     box-shadow: 2px 2px 4px inset #243a49;
 }
 
-.picture{
-    width: 350px;
-    margin-top: 35px;
-    margin-bottom: 30px;
-}
-
-.ex2{
+.ex2 {
     color: black;
     width: 550px;
-    margin-top: 60px;
+    margin-top: 40px;
     margin-left: auto;
     margin-right: auto;
     text-align: left;
@@ -206,7 +233,7 @@ body{
     font-family: "Hiragino Kaku Gothic ProN";
 }
 
-.ex3{
+.ex3 {
     color: black;
     width: 550px;
     margin-top: 50px;
@@ -220,34 +247,15 @@ body{
     font-family: "Hiragino Kaku Gothic ProN";
 }
 
-.hr1{
-    border-top: 1px solid #BAA68B;
-    width: 350px;
+.hr {
+    border-top: 1px solid #baa68b;
+    width: 400px;
     margin: 0 auto;
 }
 
-.hr2{
-    width: 350px;
-    border-top: 1px solid #BAA68B;
+.hr3 {
+    width: 600px;
+    border-top: 1px dashed #baa68b;
     margin: 0 auto;
+    margin-top: 50px;
 }
-
-.hr3{
-    width: 550px;
-    border-top: 1px dashed #BAA68B; 
-    margin: 0 auto;
-    margin-top: 80px;
-}
-
-.guid2{
-    width: 300px;
-    display: flex;
-    justify-content: space-between;
-    margin-left: auto;
-    margin-right: auto;
-    color: white;
-    font-family: "Hiragino Kaku Gothic ProN";
-    margin-top: 75px;
-    font-size: 18px;
-}
-

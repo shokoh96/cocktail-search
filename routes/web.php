@@ -25,16 +25,11 @@ Route::get('/', function () {
 Route::get('/search', function () {
     return view('tops.search');
 });
-
 Route::get('/search_result', 'SearchController@index')->name('searches.index');
-
+Route::get('/search_show/{id}', 'SearchController@show')->name('searches.show');
 
 Route::get('/records_show', function () {
     return view('records.show');
-});
-
-Route::get('/records_edit', function () {
-    return view('records.edit');
 });
 
 Auth::routes();
@@ -46,3 +41,11 @@ Route::get('/records', 'MemoController@index')->name('records.index');
 Route::get('/records_create', 'MemoController@create')->name('records.create');
 
 Route::post('/records', 'MemoController@store')->name('records.store');
+
+// Route::get('/records/{id}', 'MemoController@show')->name('records.show');
+
+Route::get('/records/{id}/edit', 'MemoController@edit')->name('records.edit');
+
+Route::put('/records/{id}', 'MemoController@update')->name('records.update');
+
+Route::delete('/records/{id}', 'MemoController@destroy')->name('records.destroy');

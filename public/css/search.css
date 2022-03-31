@@ -16,7 +16,6 @@ body {
     height: auto;
     color: #fff;
     font-size: 30px;
-    font-family: "せのびレギュラー";
     background: -moz-linear-gradient(top, #355469, #1b2a35);
     background: -webkit-linear-gradient(top, #355469, #1b2a35);
     background: linear-gradient(to bottom, #355469, #1b2a35);
@@ -38,6 +37,7 @@ img.pic2 {
 }
 
 .body {
+    font-family: "せのびレギュラー";
     top: 142px;
     display: flex;
     flex-direction: row;
@@ -199,8 +199,6 @@ button {
     border: 0;
 }
 
-
-
 .button:hover {
     opacity: 0.8;
     cursor: pointer;
@@ -212,10 +210,10 @@ button {
 }
 
 .push {
-  height: 412px;
+    height: 412px;
 }
 
 footer {
-  position: fixed;
-  bottom: 0;
+    position: fixed;
+    bottom: 0;
 }
