@@ -6,7 +6,7 @@
             <div class="col-md-8">
                 <div class="card">
                     <h1>ここ酒</h1>
-                    <div class="register-text">{{ __('新規登録') }}</div>
+                    <div class="auth-text">{{ __('新規登録') }}</div>
 
                     <div class="card-body">
                         <form method="POST" action="{{ route('register') }}">

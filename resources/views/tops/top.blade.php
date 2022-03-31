@@ -43,15 +43,15 @@
                 <div class="top-left">
                     <nav>
                         <ul class="item">
-                            <li><a href="">新規登録</a></li>
-                            <li><a href="">ログイン</a></li>
+                            <li><a href="{{ route('register') }}">新規登録</a></li>
+                            <li><a href="{{ route('login') }}">ログイン</a></li>
                             <li><a href="">お酒検索</a></li>
                             <li><a href="">記録一覧</a></li>
                             <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
+                                {{-- <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }}
-                                </a>
+                                </a> --}}
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
