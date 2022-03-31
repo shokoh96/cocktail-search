@@ -34,7 +34,7 @@
                                 <p>思い出保存数　46</p>
                             </div><!-- /.memory-count -->
                             <form class="d-flex search-box">
-                                <input class="form-control fas" type="search" placeholder="&#xf002; 思い出を検索"
+                                <input class="form-control fas" type="search" href="{{ route('records.create') }}" placeholder="&#xf002; 思い出を検索"
                                     aria-label="Search">
                                 <button class="btn btn-outline-success" type="submit" style="display: none;"></button>
                             </form>
@@ -49,7 +49,7 @@
                 <div class="nav2">
                     <a href="#">
                         << 前へ</a>
-                            <a href="#">戻る</a>
+                            <a href="{{ route('records.index') }}">戻る</a>
                             <a href="#">次へ >></a>
                 </div>
             </section>
@@ -57,7 +57,7 @@
             <section class="frame">
                 <div class="detail">
                     <div class="head">
-                        <a href="#">>> 思い出一覧に戻る</a>
+                        <a href="{{ route('records.index') }}">>> 思い出一覧に戻る</a>
                         <a href="#"><img src="/img/show-edit-button.png" height="80px" alt="編集する"></a>
                     </div>
                 </div>
@@ -118,7 +118,7 @@
                 <div class="nav2">
                     <a href="#">
                         << 前へ</a>
-                            <a href="#">戻る</a>
+                            <a href="{{ route('records.index') }}">戻る</a>
                             <a href="#">次へ >></a>
                 </div>
             </section>
