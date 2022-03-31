@@ -45,7 +45,7 @@
                         <ul class="item">
                             <li><a href="">新規登録</a></li>
                             <li><a href="">ログイン</a></li>
-                            <li><a href="">お酒検索</a></li>
+                            <li><a href="search">お酒検索</a></li>
                             <li><a href="">記録一覧</a></li>
                         </ul>
                     </nav>
@@ -66,7 +66,7 @@
                     <div class="top-right-btn">
                         <ul>
                             <li>
-                                <a class="cocktail-serach" href="#"><img src="img/top_button1.jpg" alt="お酒を探す"></a>
+                                <a class="cocktail-serach" href="search"><img src="img/top_button1.jpg" alt="お酒を探す"></a>
                             </li>
                             <li>
                                 <a class="cocktail-memo" href="#"><img src="img/top_button2.jpg" alt="お酒を探す"></a>
@@ -106,7 +106,7 @@
                         <div class="bottom-bt-contents">
                             <img src="img/top_bt-image.png" alt="今日は何のむ?">
                             <div class="bt-contents-search">
-                                <p>お酒を探す？ <a href="#">▶︎ Click</a></p>
+                                <p>お酒を探す？ <a href="search">▶︎ Click</a></p>
                             </div>
                             <div class="bt-contents-memory">
                                 <p>あの日のお酒は… <a href="#">▶︎ Click</a></p>

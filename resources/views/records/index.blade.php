@@ -34,7 +34,7 @@
                                 <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#"><img src="img/record-list_btn1-1600.jpg"
+                                            <a class="nav-link" href="{{ route('records.create') }}"><img src="img/record-list_btn1-1600.jpg"
                                                     alt="思い出登録"></a>
                                         </li>
                                         <li class="nav-item">
