@@ -29,9 +29,9 @@ class MemoController extends Controller
         $records->feature = $request->feature;
         $records->comment = $request->comment;
         $records->image = $request->image;
-        // $records->image2 = $request->image2;
-        // $records->image3 = $request->image3;
-        // $records->image4 = $request->image4;
+        $records->image2 = $request->image2;
+        $records->image3 = $request->image3;
+        $records->image4 = $request->image4;
         $records->user_id = Auth::id();
         $records->save();
         return redirect()->route('records.index');
@@ -55,9 +55,9 @@ class MemoController extends Controller
         $records->feature = $request->feature;
         $records->comment = $request->comment;
         $records->image = $request->image;
-        // $records->image2 = $request->image2;
-        // $records->image3 = $request->image3;
-        // $records->image4 = $request->image4;
+        $records->image2 = $request->image2;
+        $records->image3 = $request->image3;
+        $records->image4 = $request->image4;
         $records -> save();
 
         // return view('records.show', compact('record'));
