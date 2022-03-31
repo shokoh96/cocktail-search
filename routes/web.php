@@ -33,16 +33,8 @@ Route::get('/records_show', function () {
     return view('records.show');
 });
 
-Route::get('/records_index', function () {
-    return view('records.index');
-});
-
 Route::get('/records_edit', function () {
     return view('records.edit');
-});
-
-Route::get('/records_create', function () {
-    return view('records.create');
 });
 
 Auth::routes();

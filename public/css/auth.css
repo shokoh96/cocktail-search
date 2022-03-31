@@ -28,11 +28,18 @@
     text-align: center;
 }
 h1 {
-    margin-bottom: 63px;
+    width: 90px;
+    margin: 0 auto 63px;
+}
+h1 a {
+    display: block;
+    width: 100%;
     font-family: "せのびレギュラー";
     font-size: 30px;
+    color: #fff;
     text-align: center;
     text-shadow: 5px 4px 3px #000;
+    text-decoration: none;
 }
 .card-body {
     width: 310px;
