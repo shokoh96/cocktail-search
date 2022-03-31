@@ -65,7 +65,7 @@
             <div class="cards">
                 <div class="row">
                     @foreach ($posts as $post)
-                        <a href="#" class="col-lg-4 col-md-6">
+                        <a href="{{ route('searches.show', $post['cocktail_id']) }}" class="col-lg-4 col-md-6">
                             <div class="card">
                                 <img src="img/Sample-img.jpg" alt="" class="card-img">
                                 <div class="card-body">

@@ -25,9 +25,8 @@ Route::get('/', function () {
 Route::get('/search', function () {
     return view('tops.search');
 });
-
 Route::get('/search_result', 'SearchController@index')->name('searches.index');
-
+Route::get('/search_show/{id}', 'SearchController@show')->name('searches.show');
 
 Route::get('/records_show', function () {
     return view('records.show');

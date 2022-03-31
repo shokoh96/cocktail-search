@@ -41,8 +41,21 @@ class SearchController extends Controller
         // return view('tops.search_result', compact('posts'));
     }
 
-    public function show()
+    public function show($id)
     {
-        return view('tops.search_show');
+        $url = "https://cocktail-f.com/api/v1/cocktails/" . $id;
+        $method = "GET";
+
+        //接続
+        $client = new Client();
+
+        $response = $client->request($method, $url);
+
+        $posts = $response->getBody();
+        $posts = json_decode($posts, true);
+        $posts = $posts['cocktail'];
+        // dd($posts);
+
+        return view('tops.search_show', ['posts' => $posts]);
     }
 }
