@@ -12,7 +12,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- 自作CSS -->
-    <link rel="stylesheet" href="css/index.css">
+    {{-- <link rel="stylesheet" href="css/index.css"> --}}
+    <link rel="stylesheet" href="{{ asset('css/index.css') }}">
     <!-- FontAwesome -->
     <script src="https://kit.fontawesome.com/fb677ce336.js" crossorigin="anonymous"></script>
 </head>
@@ -96,10 +97,10 @@
                         @foreach ($records as $record)
                         <a href="#" class="col-lg-3 col-md-6">
                             <div class="card">
-                                <img src="img/Sample-img.jpg" alt="" class="card-img">
+                                <img src="{{ $record->image }}" alt="" class="card-img">
                                 <div class="card-body">
                                     <p class="card-title">{{ $record->name }}</p>
-                                    <p class="card-date">2022 - 03 -03</p>
+                                    <p class="card-date">{{ $record->created_at }}</p>
                                 </div><!-- /.card-body -->
                             </div><!-- /.card -->
                         </a>
