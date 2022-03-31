@@ -57,8 +57,9 @@
 }
 
 .item a:hover {
+    color: #FCE4E7;
     opacity: 0.5;
-} 
+}
 
 /* footer */
 
