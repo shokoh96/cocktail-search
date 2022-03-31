@@ -62,4 +62,15 @@ class MemoController extends Controller
 
         // return view('records.show', compact('record'));
     }
+
+    function destroy($id)
+    {
+        $records = Memo::find($id);
+        if(Auth::id() != $records->user_id) {
+            return abort(404);
+        }
+        $records->delete();
+        return redirect()->route('records.index');
+
+    }
 }

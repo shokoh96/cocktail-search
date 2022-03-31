@@ -66,3 +66,5 @@ Route::post('/records', 'MemoController@store')->name('records.store');
 Route::get('/records/{id}/edit', 'MemoController@edit')->name('records.edit');
 
 Route::put('/records/{id}', 'MemoController@update')->name('records.update');
+
+Route::delete('/records/{id}', 'MemoController@destroy')->name('records.destroy');
