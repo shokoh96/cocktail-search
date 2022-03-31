@@ -38,7 +38,7 @@
                                         </div>
                                         <label class="upload-label">
                                             写真を選ぶ
-                                            <input type="file" id="example" name="img" multiple>
+                                            <input type="file" id="example" name="image" multiple>
                                         </label>
                                     </div>
                                 </div>
