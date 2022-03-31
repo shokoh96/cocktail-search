@@ -5,7 +5,7 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <h1>ここ酒</h1>
+                    <h1><a href="/">ここ酒</a></h1>
                     <div class="auth-text">{{ __('ログイン') }}</div>
 
                     <div class="card-body">
