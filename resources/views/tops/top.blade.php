@@ -43,28 +43,27 @@
                 <div class="top-left">
                     <nav>
                         <ul class="item">
-                            <li><a href="{{ route('register') }}">新規登録</a></li>
-                            <li><a href="{{ route('login') }}">ログイン</a></li>
+                            @auth
+                                <li class="nav-item dropdown">
+                                    <div>
+                                        <a href="{{ route('logout') }}" onclick="confirm('リンク先に移動しますか?'); event.preventDefault();
+                                                document.getElementById('logout-form').submit();">
+                                            ログアウト
+                                        </a>
+
+                                        <form id="logout-form" action="{{ route('logout') }}" method="POST"
+                                            class="d-none">
+                                            @csrf
+                                        </form>
+                                    </div>
+                                </li>
+                            @else
+                                <li><a href="{{ route('register') }}">新規登録</a></li>
+                                <li><a href="{{ route('login') }}">ログイン</a></li>
+                            @endauth
                             <li><a href="search">お酒検索</a></li>
                             <li><a href="">記録一覧</a></li>
-                            <li class="nav-item dropdown">
-                                {{-- <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }}
-                                </a> --}}
 
-                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
-                                                                     document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
-                                    </a>
-
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST"
-                                        class="d-none">
-                                        @csrf
-                                    </form>
-                                </div>
-                            </li>
                         </ul>
                     </nav>
 
