@@ -61,7 +61,7 @@ Route::get('/records_create', 'MemoController@create')->name('records.create');
 
 Route::post('/records', 'MemoController@store')->name('records.store');
 
-
+// Route::get('/records/{id}', 'MemoController@show')->name('records.show');
 
 Route::get('/records/{id}/edit', 'MemoController@edit')->name('records.edit');
 

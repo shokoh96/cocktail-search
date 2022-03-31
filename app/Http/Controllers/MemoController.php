@@ -71,6 +71,5 @@ class MemoController extends Controller
         }
         $records->delete();
         return redirect()->route('records.index');
-
     }
 }
