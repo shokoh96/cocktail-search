@@ -1,23 +1,19 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/edit.css">
-    
+
     <title>編集</title>
 </head>
+
 <body>
-        <header class="header"  id="page-top">
-            <ul class="item">
-                <li><a class="menu" href="">新規登録</a></li>
-                <li><a class="menu2" href="">ログイン</a></li>
-                <li><a class="menu3" href="">お酒検索</a></li>
-                <li><a class="menu4" href="">記録一覧</a></li>
-            </ul>
-        </header>
+    @extends('layouts.layouts')
+    @section('content')
         <main class="main">
             <div class="main-top">
                 <h2>編集</h2>
@@ -84,7 +80,7 @@
                                 <h4>分量</h4>
                             </div>
                             <div class="quantity-bottom">
-                                <input type="text" class="quantity"  value="45ml">
+                                <input type="text" class="quantity" value="45ml">
                                 <input type="text" class="quantity2" value="FullUP">
                                 <input type="text" class="quantity3" value="1/6個">
                             </div>
@@ -92,7 +88,8 @@
                     </div>
                     <div class="form-bottom">
                         <h4>コメント（５００文字）</h4>
-                        <textarea  name="example1" cols="110" rows="10">ジンとトニックウォーターをビルドするシンプルなレシピ。家でも簡単に作れる上、さっぱりして飲みやすい。シンプルかつスタンダードなカクテルが故にバーテンダーの腕が出やすいとされる。なお、トニックウォーターだけでは甘すぎる場合は炭酸水を半分入れたジン・ソニックというカクテルもある。</textarea>
+                        <textarea name="example1" cols="110"
+                            rows="10">ジンとトニックウォーターをビルドするシンプルなレシピ。家でも簡単に作れる上、さっぱりして飲みやすい。シンプルかつスタンダードなカクテルが故にバーテンダーの腕が出やすいとされる。なお、トニックウォーターだけでは甘すぎる場合は炭酸水を半分入れたジン・ソニックというカクテルもある。</textarea>
                     </div>
                     <!-- 登録ボタン -->
                     <div class="register-derete">
@@ -109,12 +106,8 @@
                 <a href="#page-top"><img src="page_top.png" alt=""></a>
             </div>
         </main>
-        <footer class="footer">
-            <h3>ここ酒</h3>
-            <p>copyright &copy; 2022 the 5th class All Rights Reserved</p>
-        </footer>
-    </div>
-    <script src="js/edit.js"></script>
+        <script src="js/edit.js"></script>
+    @endsection
 </body>
 
 </html>
