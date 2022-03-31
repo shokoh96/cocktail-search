@@ -100,7 +100,11 @@
                         <!-- 登録ボタン -->
                         <div class="register-derete">
                             <button type="submit" class="register-btn">登録する</button>
-                            <button type="submit" onclick='return confirm("本当に削除しますか？");' class="derete-btn">削除する</button>
+                            <form action='{{ route('records.destroy', $record->id) }}' method='post'>
+                                @csrf
+                                @method('delete')
+                                  <input type='submit' value='削除' class="derete-btn" onclick='return confirm("本当に削除しますか？");'>
+                            </form>
                         </div>
                     </form>
                 </div>
