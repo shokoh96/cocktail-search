@@ -16,8 +16,8 @@
             @auth
                 <li>
                     <div>
-                        <a href="{{ route('logout') }}" onclick="confirm('リンク先に移動しますか?'); event.preventDefault();
-                                                            document.getElementById('logout-form').submit();"
+                        <a href="{{ route('logout') }}" onclick="confirm('ログアウトしてもよろしいですか?'); event.preventDefault();
+                                                                document.getElementById('logout-form').submit();"
                             class="menu">
                             ログアウト
                         </a>
