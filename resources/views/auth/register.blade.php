@@ -1,17 +1,17 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container">
+    <div class="container" id="register">
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header">{{ __('新規登録') }}</div>
+                    <h1>ここ酒</h1>
+                    <div class="register-text">{{ __('新規登録') }}</div>
 
                     <div class="card-body">
-                        <h1>ここ酒</h1>
                         <form method="POST" action="{{ route('register') }}">
                             @csrf
-                            <div class="form-group row">
+                            <div class="form-group row tp">
                                 <label for="name" class="rubi">{{ __('ニックネーム') }}</label>
 
                                 <div class="col-md-6">
@@ -40,10 +40,9 @@
                                     @enderror
                                 </div>
                             </div>
-                            
+
                             <div class="form-group row">
-                                <label for="email"
-                                    class="col-md-4 col-form-label text-md-right">{{ __('E-Mail') }}</label>
+                                <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('Email') }}</label>
 
                                 <div class="col-md-6">
                                     <input id="email" type="email" class="form-control @error('email') is-invalid @enderror"
@@ -64,7 +63,7 @@
                                 <div class="col-md-6">
                                     <input id="password" type="password"
                                         class="form-control @error('password') is-invalid @enderror" name="password"
-                                        required autocomplete="new-password">
+                                        required autocomplete="new-password" placeholder="6文字以上の半角英数">
 
                                     @error('password')
                                         <span class="invalid-feedback" role="alert">
@@ -80,18 +79,24 @@
 
                                 <div class="col-md-6">
                                     <input id="password-confirm" type="password" class="form-control"
-                                        name="password_confirmation" required autocomplete="new-password">
+                                        name="password_confirmation" required autocomplete="new-password"
+                                        placeholder="6文字以上の半角英数">
                                 </div>
                             </div>
 
-                            <div class="form-group row mb-0">
+                            <div class="form-group row mb-0 submit-btn">
                                 <div class="col-md-6 offset-md-4">
                                     <button type="submit" class="btn btn-primary">
-                                        {{ __('新規登録') }}
+                                        {{ __('登録する[無料]') }}
                                     </button>
                                 </div>
                             </div>
                         </form>
+                    </div>
+                    <div class="card-footer">
+                        <hr>
+                        <p>既にアカウントを持っている方</p>
+                        <a class="nav-link" href="{{ route('login') }}">{{ __('ログイン') }}</a>
                     </div>
                 </div>
             </div>
