@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,12 +9,28 @@
     <link rel="stylesheet" href="css/layouts.css">
     <title></title>
 </head>
+
 <body>
-    <header class="header"  id="page-top">
+    <header class="header" id="page-top">
         <ul class="item">
-            <li><a class="menu" href="">新規登録</a></li>
-            <li><a class="menu2" href="">ログイン</a></li>
-            <li><a class="menu3" href="">お酒検索</a></li>
+            @auth
+                <li>
+                    <div>
+                        <a href="{{ route('logout') }}" onclick="confirm('リンク先に移動しますか?'); event.preventDefault();
+                                                            document.getElementById('logout-form').submit();"
+                            class="menu">
+                            ログアウト
+                        </a>
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                            @csrf
+                        </form>
+                    </div>
+                </li>
+            @else
+                <li><a class="menu" href="{{ route('register') }}">新規登録</a></li>
+                <li><a class="menu2" href="{{ route('login') }}">ログイン</a></li>
+            @endauth
+            <li><a class="menu3" href="search">お酒検索</a></li>
             <li><a class="menu4" href="">記録一覧</a></li>
         </ul>
     </header>
