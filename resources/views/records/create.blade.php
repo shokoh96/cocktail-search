@@ -11,9 +11,9 @@
     
     <title>新規登録</title>
 </head>
-@extends('layouts.layouts')
-@section('content')
 <body>
+    @extends('layouts.layouts')
+    @section('content')
         <main class="main">
             <div class="main-top">
                 <h2>新規登録</h2>
@@ -105,6 +105,6 @@
             </div>
         </main>
     <script src="js/create.js"></script>
+    @endsection
 </body>
-@endsection
 </html>
