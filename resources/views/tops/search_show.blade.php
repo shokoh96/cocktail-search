@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="jp">
 
 <head>
     <meta charset="UTF-8">
@@ -11,8 +11,6 @@
 </head>
 @extends('layouts.layouts')
 @section('content')
-@extends('tops.search')
-@section('search')
     <body>
         <div class="guid">
             <div class="front">
@@ -77,11 +75,9 @@
                         << 前へ</div>
                             <div class="back">戻る</div>
                             <div class="next">次へ >></div>
-                    </div>
-
-
                 </div>
-                @endsection
-    </body>
+        </div>
+    @endsection
+</body>
 
 </html>

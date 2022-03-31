@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="css/search.css">
     <title>検索結果 - ここ酒</title>
 </head>
-{{-- @extends('layouts.layouts')
-@section('content') --}}
+@extends('layouts.layouts')
+@section('content')
     <div class="container">
         <section class="body">
             <form method="get" action="{{ route('searches.index') }}">
@@ -88,6 +88,5 @@
             </form>
         </section>
     </div>
-    @yield('search')
-    {{-- @endsection --}}
+    @endsection
 </html>
