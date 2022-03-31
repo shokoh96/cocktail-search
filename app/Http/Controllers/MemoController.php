@@ -24,16 +24,52 @@ class MemoController extends Controller
         // dd($request);
         $records = new Memo;
         $records->name = $request->name;
-        $records -> base = $request -> base;
-        $records -> taste = $request -> taste;
-        $records -> feature = $request -> feature;
-        $records -> comment = $request -> comment;
-        $records -> image = $request -> image;
-        $records -> image2 = $request -> image2;
-        $records -> image3 = $request -> image3;
-        $records -> image4 = $request -> image4;
-        $records -> user_id = Auth::id();
+        $records->base = $request->base;
+        $records->taste = $request->taste;
+        $records->feature = $request->feature;
+        $records->comment = $request->comment;
+        $records->image = $request->image;
+        $records->image2 = $request->image2;
+        $records->image3 = $request->image3;
+        $records->image4 = $request->image4;
+        $records->user_id = Auth::id();
         $records->save();
-        return redirect() -> route('records.index');
+        return redirect()->route('records.index');
+    }
+
+
+
+    public function edit($id)
+    {
+        $record = Memo::find($id);
+        // dd($record);
+        return view('records.edit', compact('record'));
+    }
+
+    function update(Request $request, $id)
+    {
+        $records = Memo::find($id);
+        $records->name = $request->name;
+        $records->base = $request->base;
+        $records->taste = $request->taste;
+        $records->feature = $request->feature;
+        $records->comment = $request->comment;
+        $records->image = $request->image;
+        $records->image2 = $request->image2;
+        $records->image3 = $request->image3;
+        $records->image4 = $request->image4;
+        $records -> save();
+
+        // return view('records.show', compact('record'));
+    }
+
+    function destroy($id)
+    {
+        $records = Memo::find($id);
+        if(Auth::id() != $records->user_id) {
+            return abort(404);
+        }
+        $records->delete();
+        return redirect()->route('records.index');
     }
 }

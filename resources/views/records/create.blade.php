@@ -11,9 +11,9 @@
     
     <title>新規登録</title>
 </head>
-@extends('layouts.layouts')
-@section('content')
 <body>
+    @extends('layouts.layouts')
+    @section('content')
         <main class="main">
             <div class="main-top">
                 <h2>新規登録</h2>
@@ -32,7 +32,7 @@
                                         </div>
                                         <label class="upload-label">
                                             写真を選ぶ
-                                            <input type="file" id="example" name="img" multiple>
+                                            <input type="file" id="example" name="image" multiple>
                                         </label>
                                     </div>
                                 </div>
@@ -90,7 +90,7 @@
                             </div>
                             <div class="form-bottom">
                                 <h4>コメント（５００文字）</h4>
-                                <textarea  name="comments" cols="110" rows="10"></textarea>
+                                <textarea  name="comment" cols="110" rows="10"></textarea>
                             </div>
                             <!-- 登録ボタン -->
                             <div class="register">
@@ -100,7 +100,7 @@
                 </div>
             </div>
             <div class="memory">
-                <a class="memory-list" href="">>> 思い出一覧に戻る</a>
+                <a class="memory-list" href="{{ route('records.index') }}">>> 思い出一覧に戻る</a>
             </div>
             <!-- ページトップボタン -->
             <div class="page-top-btn">
@@ -108,6 +108,6 @@
             </div>
         </main>
     <script src="js/create.js"></script>
+    @endsection
 </body>
-@endsection
 </html>
