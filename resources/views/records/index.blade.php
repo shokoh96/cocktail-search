@@ -97,7 +97,7 @@
                         @foreach ($records as $record)
                         <a href="#" class="col-lg-3 col-md-6">
                             <div class="card">
-                                <img src="{{ $record->image }}" alt="" class="card-img">
+                                <img src="{{ asset('storage/img/' . $record->image) }}" alt="" class="card-img">
                                 <div class="card-body">
                                     <p class="card-title">{{ $record->name }}</p>
                                     <p class="card-date">{{ $record->created_at }}</p>
