@@ -16,11 +16,8 @@
 @section('search')
 
     <body>
-        <div class="guid">
-            {{-- <a class="front" href="#">
-            << 前へ</a> --}}
+        <div class="guid" id="nav">
             <a href="javascript:history.back()">戻る</a>
-            {{-- <a class="next" href="#">次へ >></a> --}}
         </div><!-- /.guid -->
 
         <div class="box">
@@ -28,14 +25,6 @@
                 <div class="container">
                     <p class="ex">{{ $posts['cocktail_digest'] }}</p>
                     <h1 class="zin">{{ $posts['cocktail_name'] }}</h1>
-                    {{-- <div class="container2">
-                    <div class="box3">
-                        スタンダード
-                    </div>
-                    <div class="box4">
-                        キレがある
-                    </div>
-                </div> --}}
                 </div>
 
                 <div class="picture-container">

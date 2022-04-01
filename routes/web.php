@@ -37,6 +37,7 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/records', 'MemoController@index')->name('records.index');
+// Route::get('/records', 'MemoController@index')->name('records.index')->middleware('auth');
 
 Route::get('/records_create', 'MemoController@create')->name('records.create');
 

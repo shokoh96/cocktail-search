@@ -38,11 +38,11 @@ img.pic2 {
 
 .body {
     font-family: "せのびレギュラー";
-    top: 142px;
     display: flex;
     flex-direction: row;
     text-align: center;
     position: relative;
+    margin: 142px 0;
 }
 
 form {
@@ -84,8 +84,10 @@ form {
 }
 
 label {
+    color: #fff;
     padding-bottom: 23px;
     font-family: "せのびレギュラー";
+    font-size: 20px;
 }
 
 input.free {

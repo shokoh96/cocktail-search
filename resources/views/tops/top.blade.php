@@ -47,7 +47,7 @@
                                 <li class="nav-item dropdown">
                                     <div>
                                         <a href="{{ route('logout') }}" onclick="confirm('ログアウトしてもよろしいですか?'); event.preventDefault();
-                                                        document.getElementById('logout-form').submit();">
+                                                                    document.getElementById('logout-form').submit();">
                                             ログアウト
                                         </a>
 
@@ -62,7 +62,7 @@
                                 <li><a href="{{ route('login') }}">ログイン</a></li>
                             @endauth
                             <li><a href="search">お酒検索</a></li>
-                            <li><a href="">記録一覧</a></li>
+                            <li><a href="{{ route('records.index') }}">記録一覧</a></li>
 
                         </ul>
                     </nav>
@@ -86,7 +86,8 @@
                                 <a class="cocktail-serach" href="search"><img src="img/top_button1.jpg" alt="お酒を探す"></a>
                             </li>
                             <li>
-                                <a class="cocktail-memo" href="#"><img src="img/top_button2.jpg" alt="お酒を探す"></a>
+                                <a class="cocktail-memo" href="{{ route('records.index') }}"><img
+                                        src="img/top_button2.jpg" alt="お酒を探す"></a>
                             </li>
                         </ul>
                     </div><!-- /.top-right-btn -->
@@ -126,10 +127,10 @@
                                 <p>お酒を探す？ <a href="search">▶︎ Click</a></p>
                             </div>
                             <div class="bt-contents-memory">
-                                <p>あの日のお酒は… <a href="#">▶︎ Click</a></p>
+                                <p>あの日のお酒は… <a href="{{ route('records.index') }}">▶︎ Click</a></p>
                             </div>
                             <div class="bt-contents-memo">
-                                <p>思い出を残す <a href="#">▶︎ Click</a></p>
+                                <p>思い出を残す <a href="{{ route('records.index') }}">▶︎ Click</a></p>
                             </div>
                         </div><!-- /.bottom-bt-contents -->
                     </div><!-- /.bottom-bt -->

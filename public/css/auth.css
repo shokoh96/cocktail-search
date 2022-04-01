@@ -123,6 +123,14 @@ button:hover {
 .card-footer a:hover {
     opacity: 0.7;
 }
+.invalid-feedback {
+    display: inline-block;
+    margin-top: 5px;
+    padding: 5px;
+    color: #fff;
+    background-color: #C51134;
+    border-radius: 5px;
+}
 
 /* --------------------------------------------------------------------
                                 register

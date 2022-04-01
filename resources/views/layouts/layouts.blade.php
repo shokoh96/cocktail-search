@@ -16,12 +16,14 @@
 <body>
     <header class="header" id="page-top">
         <ul class="item">
+            <li><a class="menu" href="/">ホーム</a></li>
             @auth
                 <li>
                     <div>
-                        <a href="{{ route('logout') }}" onclick="confirm('ログアウトしてもよろしいですか?'); event.preventDefault();
-                                                                document.getElementById('logout-form').submit();"
-                            class="menu">
+                        <a href="{{ route('logout') }}"
+                            onclick="confirm('ログアウトしてもよろしいですか?'); event.preventDefault();
+                                                                                                        document.getElementById('logout-form').submit();"
+                            class="menu2">
                             ログアウト
                         </a>
                         <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
@@ -30,11 +32,11 @@
                     </div>
                 </li>
             @else
-                <li><a class="menu" href="{{ route('register') }}">新規登録</a></li>
+                <li><a class="menu2" href="{{ route('register') }}">新規登録</a></li>
                 <li><a class="menu2" href="{{ route('login') }}">ログイン</a></li>
             @endauth
             <li><a class="menu3" href="search">お酒検索</a></li>
-            <li><a class="menu4" href="">記録一覧</a></li>
+            <li><a class="menu4" href="{{ route('records.index') }}">記録一覧</a></li>
         </ul>
     </header>
     @yield('content')
