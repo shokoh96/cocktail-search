@@ -27,8 +27,8 @@
 }
 @media (min-width: 1550px) {
     .container-bg::after {
-        top: 271px;
-        width: 357px;
+        top: 170px;
+        width: 480px;
     }
 }
 @media (min-width: 1400px) {
@@ -57,23 +57,23 @@
     position: relative;
     display: flex;
     justify-content: space-between;
-    margin-top: 84px;
+    padding-top: 84px;
 }
 @media (min-width: 1550px) {
     .main-top {
-        margin-top: 101px;
+        padding-top: 101px;
     }
 }
 .main-top::after {
-    content: url(../img/record-list_cocktail.png);
+    /* content: url(../img/record-list_cocktail.png); */
     position: absolute;
-    top: 97px;
-    right: 55px;
+    /* top: 97px;
+    right: 55px; */
 }
 @media (min-width: 1550px) {
     .main-top::after {
         content: url(../img/record-list_cocktail-1600.png);
-        top: 108px;
+        top: 190px;
         right: 72px;
     }
 }

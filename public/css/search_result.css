@@ -84,15 +84,11 @@ html {
     background: linear-gradient(#315166, #162735);
 }
 
-.main-top {
-    height: 590px;
-}
-
 /* --------------------------------
           .pagination-top
 -------------------------------- */
 .pagination-top {
-    margin-top: 32px;
+    padding-top: 100px;
 }
 .pagination {
     display: flex;
@@ -166,7 +162,7 @@ html {
     display: inline-flex;
     align-items: center;
     padding: 9px;
-    /* font-family: "せのびレギュラー"; */
+    font-family: "せのびレギュラー";
     font-size: 17px;
     color: #355469;
     background-color: rgba(255, 255, 255, 0.8);
@@ -211,10 +207,8 @@ html {
 
 .main-middle {
     height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 55px;
+    max-width: 1100px;
+    margin: 55px auto;
 }
 
 /* --------------------------------
@@ -250,8 +244,8 @@ html {
 .card {
     position: relative;
     height: 455px;
-    border: none;
-    border-radius: 49px;
+    border: none !important;
+    border-radius: 49px !important;
 }
 .card:hover {
     transform: scale(1.02);
@@ -260,7 +254,7 @@ html {
 .card-img {
     height: 100%;
     background-size: cover;
-    border-radius: 38px;
+    border-radius: 38px !important;
 }
 @media (max-width: 760px) {
     .card-img {
@@ -282,7 +276,7 @@ html {
 .japanese {
     font-size: 27px;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 10px;
     letter-spacing: -0.1rem;
     color: #000;
     font-family: "せのびゴシック";
@@ -300,7 +294,7 @@ html {
         .pagination-bottom
 -------------------------------- */
 .pagination-bottom {
-    margin-top: 43px;
+    margin-bottom: 100px;
 }
 
 /* ページトップボタン */
@@ -317,9 +311,8 @@ html {
     height: 35px;
     margin: 60px auto 0 auto;
 }
-
 .fas {
-    font-size: 29px;
+    font-size: 17px;
     margin-top: 2px;
 }
 

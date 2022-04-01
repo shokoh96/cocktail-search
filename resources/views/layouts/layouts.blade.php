@@ -19,8 +19,9 @@
             @auth
                 <li>
                     <div>
-                        <a href="{{ route('logout') }}" onclick="confirm('ログアウトしてもよろしいですか?'); event.preventDefault();
-                                                                document.getElementById('logout-form').submit();"
+                        <a href="{{ route('logout') }}"
+                            onclick="confirm('ログアウトしてもよろしいですか?'); event.preventDefault();
+                                                                                            document.getElementById('logout-form').submit();"
                             class="menu">
                             ログアウト
                         </a>
@@ -33,8 +34,9 @@
                 <li><a class="menu" href="{{ route('register') }}">新規登録</a></li>
                 <li><a class="menu2" href="{{ route('login') }}">ログイン</a></li>
             @endauth
+            <li><a class="menu3" href="/">ホーム</a></li>
             <li><a class="menu3" href="search">お酒検索</a></li>
-            <li><a class="menu4" href="">記録一覧</a></li>
+            <li><a class="menu4" href="{{ route('records.index') }}">記録一覧</a></li>
         </ul>
     </header>
     @yield('content')

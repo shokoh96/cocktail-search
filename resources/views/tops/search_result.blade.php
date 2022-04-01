@@ -20,63 +20,61 @@
 </head>
 
 <body>
-@extends('layouts.layouts')
-@section('content')
-    <main class="main">
-        <div class="main-top">
-
-        </div>
-        <div class="pagination pagination-top">
-            <div class="pagination-inner">
-                <div class="pagination-page">
-                    <strong>
-                        <span>1</span>
-                    </strong>
-                    <a href="#">
-                        <span>2</span>
-                    </a>
-                    <a href="#">
-                        <span>3</span>
-                    </a>
-                    <a href="#">
-                        <span>4</span>
-                    </a>
-                    <a href="#">
-                        <span>5</span>
-                    </a>
-                    <span class="pagination-omission">…</span>
-                </div><!-- /.pagination_page -->
-                <div class="pagination-next">
-                    <a href="#">
-                        <span>次</span>
-                        <i class="fas fa-angle-right"></i>
-                    </a>
-                </div><!-- /.pagination_next-->
-                <div class="pagination-last">
-                    <a href="#">
-                        <span>最後</span>
-                        <i class="fas fa-angle-double-right"></i>
-                    </a>
-                </div><!-- /.pagination_last -->
-            </div><!-- /.pagination-inner -->
-        </div><!-- /.pagination-top -->
-        <div class="main-middle">
-
-            <div class="cards">
-                <div class="row">
-                    @foreach ($posts as $post)
-                        <a href="{{ route('searches.show', $post['cocktail_id']) }}" class="col-lg-4 col-md-6">
-                            <div class="card">
-                                <img src="img/Sample-img.jpg" alt="" class="card-img">
-                                <div class="card-body">
-                                    <h2 class="japanese">{{ $post['cocktail_name'] }}</h2>
-                                    <h4 class="english">{{ $post['cocktail_name_english'] }}</h4>
-                                </div><!-- /.card-body -->
-                            </div><!-- /.card -->
+    @extends('layouts.layouts')
+    @section('content')
+        <main class="main">
+            <div class="pagination pagination-top">
+                <div class="pagination-inner">
+                    <div class="pagination-page">
+                        <strong>
+                            <span>1</span>
+                        </strong>
+                        <a href="#">
+                            <span>2</span>
                         </a>
-                    @endforeach
-                </div><!-- /.row -->
-            </div><!-- /.cards -->
+                        <a href="#">
+                            <span>3</span>
+                        </a>
+                        <a href="#">
+                            <span>4</span>
+                        </a>
+                        <a href="#">
+                            <span>5</span>
+                        </a>
+                        <span class="pagination-omission">…</span>
+                    </div><!-- /.pagination_page -->
+                    <div class="pagination-next">
+                        <a href="#">
+                            <span>次</span>
+                            <i class="fas fa-angle-right"></i>
+                        </a>
+                    </div><!-- /.pagination_next-->
+                    <div class="pagination-last">
+                        <a href="#">
+                            <span>最後</span>
+                            <i class="fas fa-angle-double-right"></i>
+                        </a>
+                    </div><!-- /.pagination_last -->
+                </div><!-- /.pagination-inner -->
+            </div><!-- /.pagination-top -->
+            <div class="main-middle">
+
+                <div class="cards">
+                    <div class="row">
+                        @foreach ($posts as $post)
+                            <a href="{{ route('searches.show', $post['cocktail_id']) }}/#nav" class="col-lg-4 col-md-6">
+                                <div class="card">
+                                    <img src="img/Sample-img.jpg" alt="" class="card-img">
+                                    <div class="card-body">
+                                        <h2 class="japanese">{{ $post['cocktail_name'] }}</h2>
+                                        <h4 class="english">{{ $post['cocktail_name_english'] }}</h4>
+                                    </div><!-- /.card-body -->
+                                </div><!-- /.card -->
+                            </a>
+                        @endforeach
+                    </div><!-- /.row -->
+                </div><!-- /.cards -->
+            </div>
 
             <div class="pagination pagination-bottom">
                 <div class="pagination-inner">
@@ -117,7 +115,7 @@
             <div class="main-bottom">
                 <a href="#page-top"><img class="top-btn-img" src="img/top.png" alt=""></a>
             </div>
-    </main>
+        </main>
     @endsection
 </body>
 
