@@ -20,8 +20,9 @@
 .container-bg::after {
     content: "";
     position: absolute;
-    top: 245px;
-    width: 325px;
+    /* top: 245px; */
+    width: 400px;
+    top: 150px;
     height: 1px;
     border-bottom: 1px solid #fff;
 }
@@ -324,11 +325,11 @@
 }
 .row {
     max-width: 1100px;
-    --bs-gutter-x: 1.5rem;
-    --bs-gutter-y: 0;
+    --bs-gutter-x: 1.5rem !important;
+    --bs-gutter-y: 0 !important;
     display: flex;
     flex-wrap: wrap;
-    margin: 0 auto;
+    margin: 0 auto !important;
 }
 @media (min-width: 1550px) {
     .row {
@@ -349,8 +350,8 @@
 .card {
     position: relative;
     height: 290px;
-    border: none;
-    border-radius: 49px;
+    border: none !important;
+    border-radius: 49px !important;
 }
 @media (min-width: 1550px) {
     .card {
@@ -364,7 +365,7 @@
 .card-img {
     height: 100%;
     background-size: cover;
-    border-radius: 38px;
+    border-radius: 38px !important;
 }
 @media (max-width: 760px) {
     .card-img {
@@ -377,10 +378,11 @@
     bottom: 0;
     height: 80px;
     width: 100%;
-    padding: 0;
+    padding: 0 !important;
     text-align: center;
     background: linear-gradient(#baa68b 0%, #5d5346 100%);
-    border-radius: 0px 0px 38px 38px;
+    border-radius: 0px 0px 38px 38px !important;
+    color: #fff;
 }
 .card-title {
     margin-top: 12px;
