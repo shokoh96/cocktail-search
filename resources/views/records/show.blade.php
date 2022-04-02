@@ -27,8 +27,8 @@
                         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#"><img src="img/show-record-list_btn1.png"
-                                            alt="思い出登録"></a>
+                                    <a class="nav-link" href="#"><img
+                                            src="{{ asset('img/show-record-list_btn1.png') }}" alt="思い出登録"></a>
                                 </li>
                             </ul>
                             <div class="memory-count">
