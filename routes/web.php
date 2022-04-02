@@ -36,16 +36,15 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/records', 'MemoController@index')->name('records.index');
-// Route::get('/records', 'MemoController@index')->name('records.index')->middleware('auth');
+Route::get('/records', 'MemoController@index')->name('records.index')->middleware('auth');
 
-Route::get('/records_create', 'MemoController@create')->name('records.create');
+Route::get('/records_create', 'MemoController@create')->name('records.create')->middleware('auth');
 
 Route::post('/records', 'MemoController@store')->name('records.store');
 
-Route::get('/records/{id}', 'MemoController@show')->name('records.show');
+Route::get('/records/{id}', 'MemoController@show')->name('records.show')->middleware('auth');
 
-Route::get('/records/{id}/edit', 'MemoController@edit')->name('records.edit');
+Route::get('/records/{id}/edit', 'MemoController@edit')->name('records.edit')->middleware('auth');
 
 Route::put('/records/{id}', 'MemoController@update')->name('records.update');
 
