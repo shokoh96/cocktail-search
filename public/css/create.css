@@ -57,7 +57,7 @@ html { scroll-behavior: smooth;}
 
 .item a:hover {
     opacity: 0.5;
-} 
+}
 
 .container {
     width: 1510px;
@@ -102,19 +102,22 @@ html { scroll-behavior: smooth;}
 /* form */
 
 .input-form-outside {
-    width: 971px;
+    /* width: 971px; */
     height: 1130px;
     background: linear-gradient(#B69E82, #483E34);
     z-index: 10;
-    padding: 42px 39px 0 39px;
+    /* padding: 42px 39px 0 39px; */
+    padding-top: 42px;
 }
 
 .input-form {
     width: 970px;
-    height: 1089px;
+    /* width: 99.8%; */
+    height: 1040px;
     background-color: #F0EBE5;
     text-align: center;
     z-index: 20;
+    margin: 0 auto;
 }
 
 /* form-top */
@@ -124,6 +127,7 @@ html { scroll-behavior: smooth;}
     height: 510px;
     display: flex;
     z-index: 30;
+    margin: 0 auto;
 }
 
 .top-left {
