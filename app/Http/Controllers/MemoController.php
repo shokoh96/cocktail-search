@@ -31,7 +31,8 @@ class MemoController extends Controller
         $records->taste = $request->taste;
         $records->feature = $request->feature;
         $records->comment = $request->comment;
-        $records ->image = $img_post ;
+        $records->image = $img_post;
+        // dd($img_post);
         // $records->image = $request->image;
         // $records->image2 = $request->image2;
         // $records->image3 = $request->image3;
