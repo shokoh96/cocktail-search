@@ -103,7 +103,7 @@ html { scroll-behavior: smooth;}
 
 .input-form-outside {
     /* width: 971px; */
-    height: 1040px;
+    height: 1130px;
     background: linear-gradient(#359FAD, #1B5057);
     z-index: 10;
     padding-top: 42px;
