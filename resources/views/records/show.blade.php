@@ -58,7 +58,7 @@
                 <div class="detail">
                     <div class="head">
                         <a href="#">>> 思い出一覧に戻る</a>
-                        <a href="#"><img src="/img/show-edit-button.png" height="80px" alt="編集する"></a>
+                        <a href="{{ route('records.edit', $record->id) }}"><img src="/img/show-edit-button.png" height="80px" alt="編集する"></a>
                     </div>
                 </div>
             </section>
@@ -68,44 +68,44 @@
                     <div class="centerin">
                         <div class="calumn">
                             <div class="left">
-                                <p>2021 - 04 - 03</p>
-                                <h1>ジントニック</h1>
+                                <p>{{ $record->created_at }}</p>
+                                <h1>{{ $record->name }}</h1>
                                 <img src="/img/show-free.png" alt="お酒の写真">
                             </div>
                         </div>
                         <div class="right">
                             <div class="block">
                                 <p class="square">ベース</p>
-                                <p class="none">ジン</p>
+                                <p class="none">{{ $record->base }}</p>
                             </div>
                             <div class="block">
                                 <p class="square">味</p>
-                                <p class="none">中辛口</p>
+                                <p class="none">{{ $record->taste }}</p>
                             </div>
                             <div class="block">
                                 <p class="square">特徴</p>
-                                <p class="none">シンプル、さっぱり</p>
+                                <p class="none">{{ $record->featuru }}</p>
                             </div>
 
                             <div class="material">
                                 <h1 class="sub">材料</h1>
                                 <div class="one">
-                                    <div class="menu">ジン</div>
-                                    <div class="amount">45ml</div>
+                                    <div class="menu">{{ $record->ingredient }}</div>
+                                    <div class="amount">{{ $record->quantity }}</div>
                                 </div>
                                 <div class="one">
-                                    <div class="menu">トニックウォーター</div>
-                                    <div class="amount">FullUP</div>
+                                    <div class="menu">{{ $record->ingredient2 }}</div>
+                                    <div class="amount">{{ $record->quantity2 }}</div>
                                 </div>
                                 <div class="one">
-                                    <div class="menu">ライム</div>
-                                    <div class="amount">1/6個</div>
+                                    <div class="menu">{{ $record->ingredient3 }}</div>
+                                    <div class="amount">{{ $record->quantity3 }}</div>
                                 </div>
 
                                 <div class="material">
                                     <h1 class="sub sub1">コメント</h1>
                                     <div class="one one1">
-                                        ジンとトニックウォーターをビルドするシンプルなレシピ。家でも簡単に作れる上、さっぱりして飲みやすい。シンプルかつスタンダードなカクテルが故にバーテンダーの腕が出やすいとされる。なお、トニックウォーターだけでは甘すぎる場合は炭酸水を半分入れたジン・ソニックというカクテルもある。
+                                        {{ $record->comment }}
                                     </div>
                                 </div>
 
