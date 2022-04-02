@@ -21,6 +21,9 @@ class MemoController extends Controller
 
     public function store(Request $request)
     {
+        $img_pre = $request -> image;
+        $records = $img_pre -> getClientOriginalName();
+        $img_post = $img_pre -> storeAs('public/img',$records);
         // dd($request);
         $records = new Memo;
         $records->name = $request->name;
@@ -28,10 +31,11 @@ class MemoController extends Controller
         $records->taste = $request->taste;
         $records->feature = $request->feature;
         $records->comment = $request->comment;
-        $records->image = $request->image;
-        $records->image2 = $request->image2;
-        $records->image3 = $request->image3;
-        $records->image4 = $request->image4;
+        $records ->image = $img_post ;
+        // $records->image = $request->image;
+        // $records->image2 = $request->image2;
+        // $records->image3 = $request->image3;
+        // $records->image4 = $request->image4;
         $records->user_id = Auth::id();
         $records->save();
         return redirect()->route('records.index');
@@ -61,9 +65,9 @@ class MemoController extends Controller
         $records->feature = $request->feature;
         $records->comment = $request->comment;
         $records->image = $request->image;
-        $records->image2 = $request->image2;
-        $records->image3 = $request->image3;
-        $records->image4 = $request->image4;
+        // $records->image2 = $request->image2;
+        // $records->image3 = $request->image3;
+        // $records->image4 = $request->image4;
         $records -> save();
 
         // return view('records.show', compact('record'));
