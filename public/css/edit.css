@@ -57,7 +57,7 @@ html { scroll-behavior: smooth;}
 
 .item a:hover {
     opacity: 0.5;
-} 
+}
 
 .container {
     width: 1510px;
@@ -102,20 +102,21 @@ html { scroll-behavior: smooth;}
 /* form */
 
 .input-form-outside {
-    width: 971px;
-    height: 1130px;
+    /* width: 971px; */
+    height: 1040px;
     background: linear-gradient(#359FAD, #1B5057);
     z-index: 10;
-    padding: 42px 39px 0 39px;
+    padding-top: 42px;
 }
 
 .input-form {
     width: 970px;
-    height: 1089px;
+    height: 1040px;
     background-color: #D4E5E8;
     /* margin: 20px; */
     text-align: center;
     z-index: 20;
+    margin: 0 auto;
 }
 
 /* form-top */

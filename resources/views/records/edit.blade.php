@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/reset.css">
     {{-- <link rel="stylesheet" href="css/edit.css"> --}}
     <link rel="stylesheet" href="{{ asset('css/edit.css') }}">
-    
+
     <title>編集</title>
 </head>
 
@@ -18,13 +18,13 @@
         <main class="main">
             <div class="main-top">
                 <h2>編集</h2>
-                <img class="lemon" src="img/lemon.png" alt="グラス">
+                <img class="lemon" src="{{ asset('img/lemon.png') }}" alt="グラス">
             </div>
             <div class="input-form-outside">
                 <div class="input-form">
                     <form action="{{ route('records.update', $record->id) }}" method="POST">
-                      @csrf
-                      @method('put')
+                        @csrf
+                        @method('put')
                         <div class="form-top">
                             <div class="top-left">
                                 <div class="top-left-container">
@@ -54,7 +54,8 @@
                                     </div>
                                     <div class="taste">
                                         <label for="taste-form">味</label>
-                                        <input type="text" name="taste" class="taste-form" value="{{ $record->taste }}">
+                                        <input type="text" name="taste" class="taste-form"
+                                            value="{{ $record->taste }}">
                                     </div>
                                     <div class="featuru">
                                         <label for="featuru-form">特徴</label>
@@ -73,9 +74,12 @@
                                         <button class="puls">+</button>
                                     </div>
                                     <div class="ingredient-bottom">
-                                        <input type="text" name="ingredient" class="ingredient" value="{{ $record->ingredient }}">
-                                        <input type="text" name="ingredient2" class="ingredient2" value="{{ $record->ingredient2 }}">
-                                        <input type="text" name="ingredient3" class="ingredient3" value="{{ $record->ingredient3 }}">
+                                        <input type="text" name="ingredient" class="ingredient"
+                                            value="{{ $record->ingredient }}">
+                                        <input type="text" name="ingredient2" class="ingredient2"
+                                            value="{{ $record->ingredient2 }}">
+                                        <input type="text" name="ingredient3" class="ingredient3"
+                                            value="{{ $record->ingredient3 }}">
                                     </div>
                                 </div>
                             </div>
@@ -84,15 +88,18 @@
                                     <h4>分量</h4>
                                 </div>
                                 <div class="quantity-bottom">
-                                    <input type="text" name="quantity" class="quantity"  value="{{ $record->quantity }}">
-                                    <input type="text" name="quantity2" class="quantity2" value="{{ $record->quantity2 }}">
-                                    <input type="text" name="quantity3" class="quantity3" value="{{ $record->quantity3 }}">
+                                    <input type="text" name="quantity" class="quantity"
+                                        value="{{ $record->quantity }}">
+                                    <input type="text" name="quantity2" class="quantity2"
+                                        value="{{ $record->quantity2 }}">
+                                    <input type="text" name="quantity3" class="quantity3"
+                                        value="{{ $record->quantity3 }}">
                                 </div>
                             </div>
                         </div>
                         <div class="form-bottom">
                             <h4>コメント（５００文字）</h4>
-                            <textarea  name="comment" cols="110" rows="10">{{ $record->comment }}</textarea>
+                            <textarea name="comment" cols="110" rows="10">{{ $record->comment }}</textarea>
                         </div>
                         <!-- 登録ボタン -->
                         <div class="register-derete">
@@ -100,7 +107,8 @@
                             <form action='{{ route('records.destroy', $record->id) }}' method='post'>
                                 @csrf
                                 @method('delete')
-                                  <input type='submit' value='削除' class="derete-btn" onclick='return confirm("本当に削除しますか？");'>
+                                <input type='submit' value='削除' class="derete-btn"
+                                    onclick='return confirm("本当に削除しますか？");'>
                             </form>
                         </div>
                     </form>
@@ -111,7 +119,7 @@
             </div>
             <!-- ページトップボタン -->
             <div class="page-top-btn">
-                <a href="#page-top"><img src="page_top.png" alt=""></a>
+                <a href="#page-top"><img src="{{ asset('img/page_top.png') }}" alt=""></a>
             </div>
         </main>
         <script src="js/edit.js"></script>
