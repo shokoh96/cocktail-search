@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/show.css">
+    <link rel="stylesheet" href="{{ asset('css/reset.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/layouts.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/show.css') }}">
     <title>思い出詳細 - ここ酒</title>
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -58,7 +59,8 @@
                 <div class="detail">
                     <div class="head">
                         <a href="#">>> 思い出一覧に戻る</a>
-                        <a href="{{ route('records.edit', $record->id) }}"><img src="/img/show-edit-button.png" height="80px" alt="編集する"></a>
+                        <a href="{{ route('records.edit', $record->id) }}"><img src="/img/show-edit-button.png"
+                                height="80px" alt="編集する"></a>
                     </div>
                 </div>
             </section>
